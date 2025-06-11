@@ -1,32 +1,36 @@
 import React from 'react';
 import '../Styles/Portfolio.css';
 import fotoPerfil from '../Images/FotoVale.JPG';
+import golImage from '../Images/Gameoflife.png';
+import logoGame from '../Images/BCSPOTB_Logo.png';
+import gameImage from '../Images/GameplayScreenshot.png';
+import platImage from '../Images/PlatformImage.png';
 import { motion } from 'framer-motion';
 
 const projects = [
   {
     id: 1,
-    title: "Simulation Project",
-    description: "University project developed with C++ and Unreal Engine",
-    technologies: ["C++", "Unreal Engine"],
-    imageUrl: "https://via.placeholder.com/400x250?text=Simulation+Project",
-    liveUrl: "https://example-project-1.com"
+    title: "Game of Life",
+    description: "Project focused on representing Conway's Game of Life. It’s a simple, grid-based simulation that models how cells live, die, or reproduce over time based on a few rules.",
+    technologies: ["C++", "wxWidgets"],
+    imageUrl: golImage,
+    liveUrl: golImage
   },
   {
     id: 2,
-    title: "Data Visualization Application",
-    description: "Tool for data structures visualization",
+    title: "Bean Conquest: Spill of the Beans",
+    description: "First person strategy videogame with the objective of conquering cities and battlieng enemies.",
     technologies: ["C#", "Unity"],
-    imageUrl: "https://via.placeholder.com/400x250?text=Data+Viz+App",
-    liveUrl: "https://example-project-2.com"
+    imageUrl: logoGame,
+    liveUrl: gameImage
   },
   {
     id: 3,
-    title: "Quito AI Day Contribution",
-    description: "Volunteered at AI event",
-    technologies: ["Python", "AI"],
-    imageUrl: "https://via.placeholder.com/400x250?text=AI+Day",
-    liveUrl: "https://example-project-3.com"
+    title: "Flying Around",
+    description: "All around project focused on modeling and building a six dof platform to simulate movement during game.",
+    technologies: ["C++", "Solidworks", "PCB modeling", "Unity"],
+    imageUrl: platImage,
+    liveUrl: "https://youtu.be/_bN-MrGRLHM"
   }
 ];
 
@@ -36,7 +40,7 @@ function Main() {
     <div className="portfolio">
            <nav className="navbar glass-navbar">
   <div className="navbar-left">
-    <h1 className="navbar-title">Valentina Herrera</h1>
+    <h1 className="navbar-title">Valentina Herrera Molano</h1>
   </div>
   <ul className="navbar-right">
     <li><a href="#about">About</a></li>
@@ -62,16 +66,28 @@ function Main() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1>Valentina Herrera</h1>
+            <h1>Valentina Herrera Molano</h1>
             <h2>Simulation and Visualization Student</h2>
             <p className="summary">
-              Passionate college student pursuing a Bachelor's degree in Simulation and Visualization at Full Sail University. 
-              Aiming to work as a Technical Program Manager at Google with my knowledge in programming with C++ and C#.
+              Passionate and hands-on college student pursuing a degree in Simulation and Visualization, with a strong foundation in problem solving, digital fabrication, and programming.  
+              Experienced in prototyping, embedded systems, and 3D modeling, with a passion for building functional, real-world solutions.
+              Skilled in C++, microcontrollers, and creating virtual environments for training and testing.
+              Eager to contribute to innovative engineering teams through internships or entry-level roles in product or hardware engineering, or software development.
             </p>
             <address className="contact-info" id="contact">
               <div><i className="fas fa-phone" aria-hidden="true"></i><span>+1 689 298 7888</span></div>
               <div><i className="fas fa-envelope" aria-hidden="true"></i><span>vhm110305@gmail.com</span></div>
               <div><i className="fas fa-map-marker-alt" aria-hidden="true"></i><span>Orlando, Florida</span></div>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/valentinaherreramolano/?locale=en_US"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ marginLeft: "1rem" }}
+                  >
+                  LinkedIn Profile
+                </a>
+             </div>
             </address>
             <div className="social-links" role="list">
               <a href="https://www.linkedin.com/in/valentina-herrera-molano" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -94,18 +110,14 @@ function Main() {
               <h5>Full Sail University</h5>
               <p>Bachelor of Science: Simulation and Visualization (In progress - 2025)</p>
               <ul>
-                <li>Programming in C++ and C#</li>
-                <li>Version control with Git</li>
-                <li>Problem solving and critical thinking</li>
+                <li>GPA: 3.98</li>
+                <li>Relevant Coursework: Data Structures and Algorithms, Operating Systems,  
+                    Digital Fabrication, Virtual and Augmented Reality.</li>
               </ul>
             </div>
             <div className="info-block">
-              <h5>Sek Los Valles International School</h5>
+              <h5>SEK Los Valles International School</h5>
               <p>International Baccalaureate Bilingual Diploma (2023)</p>
-              <ul>
-                <li>Collaborative group work</li>
-                <li>Work under pressure and multitasking</li>
-              </ul>
             </div>
           </div>
           <div>
@@ -140,6 +152,8 @@ function Main() {
             <li>Git Version Control</li>
             <li>C++ / C# / Python</li>
             <li>Unity / Unreal Engine</li>
+            <li>Solidworks 3D modeling</li>
+            <li>PCB modeling</li>
           </ul>
         </div>
         <div className="skills-block">
@@ -149,6 +163,14 @@ function Main() {
             <li>Problem solving</li>
             <li>Collaboration</li>
             <li>Communication</li>
+            <li>Interpersonal</li>
+          </ul>
+        </div>
+        <div className="skills-block">
+          <h4>Languages</h4>
+          <ul>
+            <li>Spanish (Native)</li>
+            <li>English (Proficient)</li>
           </ul>
         </div>
       </div>
