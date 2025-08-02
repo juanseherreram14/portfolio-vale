@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     title: "Game of Life",
     description: "Project focused on representing Conway's Game of Life. It’s a simple, grid-based simulation that models how cells live, die, or reproduce over time based on a few rules.",
-    technologies: ["C++", "wxWidgets"],
+    technologies: [],
     imageUrl: golImage,
     liveUrl: golImage
   },
@@ -20,7 +20,7 @@ const projects = [
     id: 2,
     title: "Bean Conquest: Spill of the Beans",
     description: "First person strategy videogame with the objective of conquering cities and battlieng enemies.",
-    technologies: ["C#", "Unity"],
+    technologies: [],
     imageUrl: logoGame,
     liveUrl: gameImage
   },
@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     title: "Flying Around",
     description: "All around project focused on modeling and building a six dof platform to simulate movement during game.",
-    technologies: ["C++", "Solidworks", "PCB modeling", "Unity"],
+    technologies: [],
     imageUrl: platImage,
     liveUrl: "https://youtu.be/_bN-MrGRLHM"
   }
@@ -44,12 +44,11 @@ function Main() {
         </div>
         <ul className="navbar-right">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <section className="hero-section">
+      <section className="hero-section" id="about">
         <div className="hero-content-wrapper">
           <motion.div
             className="hero-image-container"
@@ -70,43 +69,12 @@ function Main() {
             <h2>Hardware Engineering Portfolio</h2>
             <p className="summary">
               Hello and welcome to my portfolio!
-              I’m a passionate engineer specializing in CAD design, PCB design, and digital fabrication. 
+              I’m a passionate engineer specializing in CAD design, PCB design, and digital fabrication.
               With a strong foundation in creating functional and innovative solutions, I aim to contribute my skills to the product development industry, from concept to prototype to final production.
             </p>
           </motion.div>
         </div>
       </section>
-
-      <section className="skills-section" id="skills">
-        <div className="skills-wrapper">
-          <div className="skills-content">
-            <h3>Skills</h3>
-            <div className="skills-columns">
-              <div className="skills-block">
-                <h4>Technical</h4>
-                <ul>
-                  <li>Data structures & algorithms</li>
-                  <li>Object-Oriented Programming</li>
-                  <li>Git Version Control</li>
-                  <li>C++ / C# / Python</li>
-                  <li>Unity / Unreal Engine</li>
-                  <li>Solidworks 3D modeling</li>
-                  <li>PCB modeling</li>
-                </ul>
-              </div>
-              <div className="skills-block">
-                <h4>Languages</h4>
-                <ul>
-                  <li>Spanish (Native)</li>
-                  <li>English (Proficient)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
 
       <section className="projects-section" id="projects">
         <div className="projects-wrapper">
@@ -132,8 +100,19 @@ function Main() {
               </article>
             ))}
           </div>
+          <div className="view-all-projects">
+            <a
+              href="/all-projects"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="view-all-btn"
+            >
+              View All Projects
+            </a>
+          </div>
         </div>
       </section>
+      
 
 
       <footer>
