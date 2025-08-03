@@ -1,36 +1,36 @@
 import React from 'react';
 import '../Styles/Portfolio.css';
 import fotoPerfil from '../Images/FotoVale.JPG';
-import golImage from '../Images/Gameoflife.png';
-import logoGame from '../Images/BCSPOTB_Logo.png';
+import simonSenseImage from '../Images/SimonSenseImage.jpg';
+import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
 import gameImage from '../Images/GameplayScreenshot.png';
-import platImage from '../Images/PlatformImage.png';
+import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
 import { motion } from 'framer-motion';
 
 const projects = [
-  {
+    {
     id: 1,
-    title: "Game of Life",
-    description: "Project focused on representing Conway's Game of Life. It’s a simple, grid-based simulation that models how cells live, die, or reproduce over time based on a few rules.",
+    title: "Flying Around",
+    description: "All around project focused on modeling and building a six dof platform to simulate movement during game.",
     technologies: [],
-    imageUrl: golImage,
-    liveUrl: golImage
+    imageUrl: platImage,
+    liveUrl: "https://youtu.be/_bN-MrGRLHM"
   },
   {
     id: 2,
     title: "Bean Conquest: Spill of the Beans",
     description: "First person strategy videogame with the objective of conquering cities and battlieng enemies.",
     technologies: [],
-    imageUrl: logoGame,
+    imageUrl: smartPDImage,
     liveUrl: gameImage
   },
   {
     id: 3,
-    title: "Flying Around",
-    description: "All around project focused on modeling and building a six dof platform to simulate movement during game.",
+    title: "Game of Life",
+    description: "Project focused on representing Conway's Game of Life. It’s a simple, grid-based simulation that models how cells live, die, or reproduce over time based on a few rules.",
     technologies: [],
-    imageUrl: platImage,
-    liveUrl: "https://youtu.be/_bN-MrGRLHM"
+    imageUrl: simonSenseImage,
+    liveUrl: simonSenseImage
   }
 ];
 
@@ -86,11 +86,6 @@ function Main() {
                 <div>
                   <h4>{project.title}</h4>
                   <p>{project.description}</p>
-                  <div className="tech-tags">
-                    {project.technologies.map((tech, index) => (
-                      <span key={index}>{tech}</span>
-                    ))}
-                  </div>
                   {project.liveUrl ? (
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">View Project</a>
                   ) : (
@@ -103,8 +98,6 @@ function Main() {
           <div className="view-all-projects">
             <a
               href="/all-projects"
-              target="_blank"
-              rel="noopener noreferrer"
               className="view-all-btn"
             >
               View All Projects
@@ -118,7 +111,7 @@ function Main() {
         <div className="contact-grid">
           <div>
             <div className="info-block">
-              <p>Phone Number: +1 689 298 7888</p>
+              <p>Phone Number: 689 298 7888</p>
               <a
                 href="mailto:vhm110305@gmail.com"
                 target="_blank"
