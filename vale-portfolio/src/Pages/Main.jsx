@@ -112,8 +112,33 @@ function Main() {
           </div>
         </div>
       </section>
-      
 
+      <section className="contact" id="contact">
+        <h3>CONTACT ME</h3>
+        <div className="contact-grid">
+          <div>
+            <div className="info-block">
+              <p>Phone Number: +1 689 298 7888</p>
+              <a
+                href="mailto:vhm110305@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginLeft: "1rem" }}
+              >
+                Email: vhm110305@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/in/valentinaherreramolano/?locale=en_US"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginLeft: "1rem" }}
+              >
+                LinkedIn Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer>
         <p>© {new Date().getFullYear()} Valentina Herrera. All rights reserved.</p>
