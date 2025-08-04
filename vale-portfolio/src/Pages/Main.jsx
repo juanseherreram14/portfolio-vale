@@ -3,7 +3,6 @@ import '../Styles/Portfolio.css';
 import fotoPerfil from '../Images/FotoVale.JPG';
 import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
-import gameImage from '../Images/GameplayScreenshot.png';
 import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
 import { motion } from 'framer-motion';
 
@@ -22,7 +21,7 @@ const projects = [
     description: "First person strategy videogame with the objective of conquering cities and battlieng enemies.",
     technologies: [],
     imageUrl: smartPDImage,
-    liveUrl: gameImage
+    liveUrl: "/MainProject2"
   },
   {
     id: 3,
@@ -30,7 +29,7 @@ const projects = [
     description: "Project focused on representing Conway's Game of Life. It’s a simple, grid-based simulation that models how cells live, die, or reproduce over time based on a few rules.",
     technologies: [],
     imageUrl: simonSenseImage,
-    liveUrl: simonSenseImage
+    liveUrl: "/MainProject3"
   }
 ];
 
