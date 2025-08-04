@@ -8,13 +8,13 @@ import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
 import { motion } from 'framer-motion';
 
 const projects = [
-    {
+  {
     id: 1,
     title: "Flying Around",
     description: "All around project focused on modeling and building a six dof platform to simulate movement during game.",
     technologies: [],
     imageUrl: platImage,
-    liveUrl: "https://youtu.be/_bN-MrGRLHM"
+    liveUrl: "/MainProject1"
   },
   {
     id: 2,
@@ -66,7 +66,7 @@ function Main() {
             transition={{ duration: 0.8 }}
           >
             <h1>Valentina Herrera Molano</h1>
-            <h2>Hardware Engineering Portfolio</h2>
+            <h2>Product Engineering Portfolio</h2>
             <p className="summary">
               Hello and welcome to my portfolio!
               I’m a passionate engineer specializing in CAD design, PCB design, and digital fabrication.
@@ -87,7 +87,9 @@ function Main() {
                   <h4>{project.title}</h4>
                   <p>{project.description}</p>
                   {project.liveUrl ? (
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">View Project</a>
+                    <a href={project.liveUrl}>
+                      Show me
+                    </a>
                   ) : (
                     <button disabled>Project in development</button>
                   )}

@@ -42,7 +42,7 @@ function AllProjects() {
                     <h1 className="APnavbar-title"> </h1>
                 </div>
                 <ul className="APnavbar-right">
-                    <li><a href="/#home">Home</a></li>
+                    <li><a href="/#home">Go back home</a></li>
                 </ul>
             </nav>
 
