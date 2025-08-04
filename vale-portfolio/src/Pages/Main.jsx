@@ -4,12 +4,13 @@ import fotoPerfil from '../Images/FotoVale.JPG';
 import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
 import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
+import resume from '../Files/ValentinaHerrera_Resume_ProductEngineering.pdf';
 import { motion } from 'framer-motion';
 
 const projects = [
   {
     id: 1,
-    title: "Flying Around",
+    title: "Six Degrees of Freedom Platform",
     description: "All around project focused on modeling and building a six dof platform to simulate movement during game.",
     technologies: [],
     imageUrl: platImage,
@@ -17,7 +18,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Bean Conquest: Spill of the Beans",
+    title: "Smart Pill Dispenser",
     description: "First person strategy videogame with the objective of conquering cities and battlieng enemies.",
     technologies: [],
     imageUrl: smartPDImage,
@@ -25,7 +26,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Game of Life",
+    title: "PCB for Simon Sense",
     description: "Project focused on representing Conway's Game of Life. It’s a simple, grid-based simulation that models how cells live, die, or reproduce over time based on a few rules.",
     technologies: [],
     imageUrl: simonSenseImage,
@@ -45,6 +46,7 @@ function Main() {
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href= {resume} target="_blank" rel="noopener noreferrer" >Resume</a></li>
         </ul>
       </nav>
       <section className="hero-section" id="about">
@@ -68,7 +70,7 @@ function Main() {
             <h2>Product Engineering Portfolio</h2>
             <p className="summary">
               Hello and welcome to my portfolio!
-              I’m a passionate engineer specializing in CAD design, PCB design, and digital fabrication.
+              I’m a SolidWorks certified engineer specializing in CAD design, PCB design, and digital fabrication.
               With a strong foundation in creating functional and innovative solutions, I aim to contribute my skills to the product development industry, from concept to prototype to final production.
             </p>
           </motion.div>
