@@ -1,22 +1,22 @@
 import React from 'react';
 import '../Styles/MainProject1.css';
-import mainVideo from '../Videos/StewP_Isometric_Animation.mp4';
-import SPCad from '../Images/SP_CAD.png';
-import SPPcb from '../Images/SP_PCB.png';
-import SPFinal from '../Images/SP_Final.jpg';
+import mainVideo from '../Videos/SmartPillDispenserAnimation.mp4';
+import SPDCad from '../Images/SmartPillDispenser_CAD.png';
+import SPDCircuit from '../Images/SmartPillDispenser_Circuit.jpg';
+import SPDFinal from '../Images/SmartPillDispenser_Final.jpg';
 
 const showcase = [
     {
         id: 1,
-        imageUrl: SPCad
+        imageUrl: SPDCad
     },
     {
         id: 2,
-        imageUrl: SPPcb
+        imageUrl: SPDCircuit
     },
     {
         id: 3,
-        imageUrl: SPFinal
+        imageUrl: SPDFinal
     }
 ];
 

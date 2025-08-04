@@ -1,22 +1,22 @@
 import React from 'react';
 import '../Styles/MainProject1.css';
-import mainVideo from '../Videos/StewP_Isometric_Animation.mp4';
-import SPCad from '../Images/SP_CAD.png';
-import SPPcb from '../Images/SP_PCB.png';
-import SPFinal from '../Images/SP_Final.jpg';
+import mainVideo from '../Videos/SimonSenseDemo.mp4';
+import SSPcb from '../Images/SimonSensePCB.png';
+import SSPrint from '../Images/SimonSensePrint.jpg';
+import SSDone from '../Images/SimonSenseDone.jpg';
 
 const showcase = [
     {
         id: 1,
-        imageUrl: SPCad
+        imageUrl: SSPcb
     },
     {
         id: 2,
-        imageUrl: SPPcb
+        imageUrl: SSPrint
     },
     {
         id: 3,
-        imageUrl: SPFinal
+        imageUrl: SSDone
     }
 ];
 
