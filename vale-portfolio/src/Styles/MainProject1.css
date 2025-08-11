@@ -75,7 +75,7 @@ body {
 
 .video-container {
   position: relative;
-  width: 35%;
+  width: 30%;
   height: 100vh;
   display: flex;
   align-items: left;
@@ -97,8 +97,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 65%;
-  padding: 5rem 3rem;
+  width: 70%;
+  padding: 5rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,11 +117,11 @@ body {
 }
 
 .showcase-grid {
-  margin-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
+  gap: 1rem;
   width: 100%;
+  padding: 8.5rem 0.5rem;
 }
 
 .showcase-card {
@@ -144,31 +144,91 @@ body {
   object-fit: cover;
 }
 
-
-.content-grid {
-  margin-bottom: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  width: 100%;
+.changing-text-container {
+  background: rgba(63, 22, 81, 0.13);
+  border-radius: 15px;
+  max-height: 350px;
+  color: #000000;
+  text-align: center;
 }
 
-.content-card {
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 16px;
-  overflow: hidden;
-  transition: transform 0.2s ease;
+.text-block {
+  min-height: 160px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease;
 }
 
-.content-card h1 {
-  color: #3f1651CC;
-  font-size: 2.5rem;
+.text-block h3 {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  color: #3F1651cc;
+}
+
+.text-block p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.text-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.change-btn {
+  padding: 6px 20px;
+  position: absolute;
+  bottom: 100px;
+  background-color: rgba(63, 22, 81, 0.8);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.change-btn:hover {
+  background-color: rgba(63, 22, 81, 1);
+  transform: translateY(-2px);
+}
+
+.text-selector-buttons {
+  position: absolute;
+  bottom: 145px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.selector-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: white;
+  cursor: pointer;
   font-weight: bold;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
 }
 
-.content-card h2 {
-  font-size: 1.4rem;
-  color: #000000;
+.selector-btn:hover {
+  border-color: #3F1651cc;
+  color: #3F1651cc;
+}
+
+.selector-btn.active {
+  background-color: #3F1651cc;
+  border-color: #3F1651cc;
+  color: white;
 }
