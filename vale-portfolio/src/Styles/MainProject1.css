@@ -121,7 +121,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
   gap: 1rem;
   width: 100%;
-  padding: 8.5rem 0.5rem;
+  padding: 4rem 0.5rem;
 }
 
 .showcase-card {
@@ -147,7 +147,7 @@ body {
 .changing-text-container {
   background: rgba(63, 22, 81, 0.13);
   border-radius: 15px;
-  max-height: 350px;
+  max-height: 450px;
   color: #000000;
   text-align: center;
 }
@@ -185,8 +185,6 @@ body {
 
 .change-btn {
   padding: 6px 20px;
-  position: absolute;
-  bottom: 100px;
   background-color: rgba(63, 22, 81, 0.8);
   color: white;
   border: none;
@@ -203,8 +201,6 @@ body {
 }
 
 .text-selector-buttons {
-  position: absolute;
-  bottom: 145px;
   display: flex;
   gap: 0.5rem;
 }

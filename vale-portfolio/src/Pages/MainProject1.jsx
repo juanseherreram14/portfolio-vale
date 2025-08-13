@@ -19,7 +19,7 @@ const showcase = [
         imageUrl: SPFinal
     },
     {
-        id: 3,
+        id: 4,
         imageUrl: SPFinal
     }
 ];
@@ -104,13 +104,13 @@ function MainProject1() {
                                 {'next'}
                             </button>
                         </div>
-                        <div className="showcase-grid">
-                            {showcase.map(showcase => (
-                                <article key={showcase.id} className="showcase-card">
-                                    <img src={showcase.imageUrl} alt="" />
-                                </article>
-                            ))}
-                        </div>
+                    </div>
+                    <div className="showcase-grid">
+                        {showcase.map(showcase => (
+                            <article key={showcase.id} className="showcase-card">
+                                <img src={showcase.imageUrl} alt="" />
+                            </article>
+                        ))}
                     </div>
                 </div>
             </section>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Styles/MainProject1.css';
 import mainVideo from '../Videos/SmartPillDispenserAnimation.mp4';
 import SPDCad from '../Images/SmartPillDispenser_CAD.png';
@@ -17,10 +17,44 @@ const showcase = [
     {
         id: 3,
         imageUrl: SPDFinal
+    },
+    {
+        id: 4,
+        imageUrl: SPDFinal
+    }
+];
+
+const textContent = [
+    {
+        title: "Overview",
+        text: "I specialize in creating innovative solutions using cutting-edge technology. My projects range from game development to hardware simulation platforms."
+    },
+    {
+        title: "Tools",
+        text: "Proficient in C++, C#, Python, and Unity. I have experience with 3D modeling in Solidworks, PCB design, and embedded systems development."
+    },
+    {
+        title: "Results",
+        text: "I'm passionate about bridging the gap between digital simulation and real-world applications. I aim to contribute to teams working on innovative engineering solutions."
+    },
+    {
+        title: "Education & Experience",
+        text: "Currently pursuing a degree in Simulation and Visualization with hands-on experience in prototyping, digital fabrication, and creating virtual training environments."
     }
 ];
 
 function MainProject2() {
+    const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+    // Function to change to the next text
+    const changeText = () => {
+        setCurrentTextIndex((prevIndex) =>
+            prevIndex === textContent.length - 1 ? 0 : prevIndex + 1
+        );
+    };
+    const selectText = (index) => {
+        setCurrentTextIndex(index);
+    };
     return (
         <div className="main-project1-page">
             <nav className="MP1navbar MP1glass-navbar">
@@ -45,26 +79,37 @@ function MainProject2() {
                     </video>
                 </div>
                 <div className="showcase-wrapper">
+                    <div className="changing-text-container">
+                        <div className="text-block">
+                            <h3>{textContent[currentTextIndex].title}</h3>
+                            <p>{textContent[currentTextIndex].text}</p>
+                        </div>
+
+                        <div className="text-controls">
+
+                            {/* Optional: Individual buttons for each text */}
+                            <div className="text-selector-buttons">
+                                {textContent.map((_, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => selectText(index)}
+                                        className={`selector-btn ${currentTextIndex === index ? 'active' : ''}`}
+                                    >
+                                        {index + 1}
+                                    </button>
+                                ))}
+                            </div>
+                            <button onClick={changeText} className="change-btn">
+                                {'next'}
+                            </button>
+                        </div>
+                    </div>
                     <div className="showcase-grid">
                         {showcase.map(showcase => (
                             <article key={showcase.id} className="showcase-card">
                                 <img src={showcase.imageUrl} alt="" />
                             </article>
                         ))}
-                    </div>
-                    <div className="content-grid">
-                        <article key={1} className="content-card">
-                            <h1>What</h1>
-                            <h2>This is the explanation.</h2>
-                        </article>
-                        <article key={2} className="content-card">
-                            <h1>How</h1>
-                            <h2>This is the explanation.</h2>                           
-                        </article>   
-                        <article key={3} className="content-card">
-                            <h1>Results</h1>
-                            <h2>This is the explanation.</h2>                            
-                        </article>                                            
                     </div>
                 </div>
             </section>
