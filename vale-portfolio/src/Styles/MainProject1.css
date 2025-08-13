@@ -75,7 +75,7 @@ body {
 
 .video-container {
   position: relative;
-  width: 30%;
+  width: 33%;
   height: 100vh;
   display: flex;
   align-items: left;
@@ -102,7 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .showcase-wrapper h3 {
@@ -121,7 +121,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
   gap: 1rem;
   width: 100%;
-  padding: 4rem 0.5rem;
+  padding: 2rem 0.5rem;
 }
 
 .showcase-card {
@@ -157,22 +157,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-bottom: 3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-bottom: 1.5rem;
   transition: all 0.3s ease;
 }
 
 .text-block h3 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #3F1651cc;
 }
 
 .text-block p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   margin: 0;
+  text-align: justify;
 }
 
 .text-controls {
@@ -180,7 +181,7 @@ body {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .change-btn {

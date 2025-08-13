@@ -3,6 +3,7 @@ import '../Styles/MainProject1.css';
 import mainVideo from '../Videos/StewP_Isometric_Animation.mp4';
 import SPCad from '../Images/SP_CAD.png';
 import SPPcb from '../Images/SP_PCB.png';
+import SPPcb2 from '../Images/SP_PCB_Done.jpg'
 import SPFinal from '../Images/SP_Final.jpg';
 
 const showcase = [
@@ -16,7 +17,7 @@ const showcase = [
     },
     {
         id: 3,
-        imageUrl: SPFinal
+        imageUrl: SPPcb2
     },
     {
         id: 4,
@@ -27,19 +28,15 @@ const showcase = [
 const textContent = [
     {
         title: "Overview",
-        text: "I specialize in creating innovative solutions using cutting-edge technology. My projects range from game development to hardware simulation platforms."
+        text: "Time: 3 months.\nObjective: Design, simulate and build prototype of a small scale motion platform.\nTools: SolidWorks, Eagle, Arduino, Unity.\nFor this project I drafted and fabricated a platform that moves in the six degrees of freedom. The movement is given by the rotation of six servo motors controlled by a microcontroller. It is a scaled version of a motion platform used to simulate movement and create immersive experiences in various applications."
     },
     {
-        title: "Tools",
-        text: "Proficient in C++, C#, Python, and Unity. I have experience with 3D modeling in Solidworks, PCB design, and embedded systems development."
+        title: "Method",
+        text: "-Draft and assemble 3D design, then make motion study and animation in SolidWorks.\n-3D print previously modeled components.\n-Design PCB in Eagle and print it.\n-Mount and solder electronic components to PCB.\n-Assemble all components together.\n-Run tests to measure motion range."
     },
     {
         title: "Results",
-        text: "I'm passionate about bridging the gap between digital simulation and real-world applications. I aim to contribute to teams working on innovative engineering solutions."
-    },
-    {
-        title: "Education & Experience",
-        text: "Currently pursuing a degree in Simulation and Visualization with hands-on experience in prototyping, digital fabrication, and creating virtual training environments."
+        text: "-Platform moves smoothly in all six degrees of freedom.\n-Fully functional prototype.\n-Finished product can be used to simulate movement for immersibve experiences in a small scale."
     }
 ];
 
@@ -63,6 +60,9 @@ function MainProject1() {
                     <h1 className="MP1navbar-title">Six Degrees of Freedom Platform</h1>
                 </div>
                 <ul className="MP1navbar-right">
+                    <li><a href="https://youtu.be/_bN-MrGRLHM"
+                        target="_blank"
+                        rel="noopener noreferrer">Demo</a></li>
                     <li><a href="/#home">Go back home</a></li>
                 </ul>
             </nav>
@@ -81,7 +81,7 @@ function MainProject1() {
                 </div>
                 <div className="showcase-wrapper">
                     <div className="changing-text-container">
-                        <div className="text-block">
+                        <div className="text-block" style={{ whiteSpace: 'pre-line' }}>
                             <h3>{textContent[currentTextIndex].title}</h3>
                             <p>{textContent[currentTextIndex].text}</p>
                         </div>
