@@ -28,7 +28,7 @@ const showcase = [
 const textContent = [
     {
         title: "Overview",
-        text: "Time: 3 months.\nObjective: Design, simulate and build prototype of a small scale motion platform.\nTools: SolidWorks, Eagle, Arduino, Unity.\nFor this project I drafted and fabricated a platform that moves in the six degrees of freedom. The movement is given by the rotation of six servo motors controlled by a microcontroller. It is a scaled version of a motion platform used to simulate movement and create immersive experiences in various applications."
+        text: "Time: 3 months (December 2024 - February 2025).\nObjective: Design, simulate and build prototype of a small scale motion platform.\nTools: SolidWorks, Eagle, Arduino IDE, Unity.\nFor this project I drafted and fabricated a platform that moves in the six degrees of freedom. The movement is given by the rotation of six servo motors controlled by a microcontroller. It is a scaled version of a motion platform used to simulate movement and create immersive experiences in various applications."
     },
     {
         title: "Method",

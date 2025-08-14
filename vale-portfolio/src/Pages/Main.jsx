@@ -19,7 +19,7 @@ const projects = [
   {
     id: 2,
     title: "Smart Pill Dispenser",
-    description: "First person strategy videogame with the objective of conquering cities and battlieng enemies.",
+    description: "Assistive technology project of a gadget made to serve as a pill dispenser.",
     technologies: [],
     imageUrl: smartPDImage,
     liveUrl: "/MainProject2"
