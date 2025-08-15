@@ -12,7 +12,6 @@ const projects = [
     id: 1,
     title: "Six Degrees of Freedom Platform",
     description: "All around project focused on modeling and building a six dof platform to simulate movement.",
-    technologies: [],
     imageUrl: platImage,
     liveUrl: "/MainProject1"
   },
@@ -20,15 +19,13 @@ const projects = [
     id: 2,
     title: "Smart Pill Dispenser",
     description: "Assistive technology project of a gadget made to serve as a pill dispenser.",
-    technologies: [],
     imageUrl: smartPDImage,
     liveUrl: "/MainProject2"
   },
   {
     id: 3,
     title: "PCB for Simon Sense",
-    description: "Project focused on representing Conway's Game of Life. It’s a simple, grid-based simulation that models how cells live, die, or reproduce over time based on a few rules.",
-    technologies: [],
+    description: "Project focused on Printed Circuit Board design and fabrication.",
     imageUrl: simonSenseImage,
     liveUrl: "/MainProject3"
   }
@@ -98,14 +95,14 @@ function Main() {
               </article>
             ))}
           </div>
-          <div className="view-all-projects">
+          {/* <div className="view-all-projects">
             <a
               href="/all-projects"
               className="view-all-btn"
             >
               View All Projects
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
 

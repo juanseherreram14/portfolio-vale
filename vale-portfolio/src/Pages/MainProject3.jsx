@@ -2,21 +2,22 @@ import React, { useState } from 'react';
 import '../Styles/MainProject1.css';
 import mainVideo from '../Videos/SimonSenseDemo.mp4';
 import SSPcb from '../Images/SimonSensePCB.png';
+import SSPcbSch from '../Images/SimonSenseSchematic.png'
 import SSPrint from '../Images/SimonSensePrint.jpg';
 import SSDone from '../Images/SimonSenseDone.jpg';
 
 const showcase = [
     {
         id: 1,
-        imageUrl: SSPcb
+        imageUrl: SSPcbSch
     },
     {
         id: 2,
-        imageUrl: SSPrint
+        imageUrl: SSPcb
     },
     {
         id: 3,
-        imageUrl: SSDone
+        imageUrl: SSPrint
     },
     {
         id: 4,
@@ -27,19 +28,15 @@ const showcase = [
 const textContent = [
     {
         title: "Overview",
-        text: "I specialize in creating innovative solutions using cutting-edge technology. My projects range from game development to hardware simulation platforms."
+        text: "Time: 1 week.\nObjective: make PCB for Simon Sense.\nTools: Eagle.\nMy professor Richard Arndt created a variation of the game Simon that instead of having buttons to get user feedback, it has LEDs used as light sensors. In his class we got to work on the whole process of fabricating a PCB for the game based on the mechanism he designed."
     },
     {
-        title: "Tools",
-        text: "Proficient in C++, C#, Python, and Unity. I have experience with 3D modeling in Solidworks, PCB design, and embedded systems development."
+        title: "Method",
+        text: "-Make PCB schematic and design board in Eagle.\n-Print board.\n-Mount and solder electronic components.\nTest for shorts with multimeter."
     },
     {
         title: "Results",
-        text: "I'm passionate about bridging the gap between digital simulation and real-world applications. I aim to contribute to teams working on innovative engineering solutions."
-    },
-    {
-        title: "Education & Experience",
-        text: "Currently pursuing a degree in Simulation and Visualization with hands-on experience in prototyping, digital fabrication, and creating virtual training environments."
+        text: "All connections of the PCB work correctly and it could be used to make a functional Simon Sense."
     }
 ];
 
@@ -80,7 +77,7 @@ function MainProject3() {
                 </div>
                 <div className="showcase-wrapper">
                     <div className="changing-text-container">
-                        <div className="text-block">
+                        <div className="text-block" style={{ whiteSpace: 'pre-line' }}>
                             <h3>{textContent[currentTextIndex].title}</h3>
                             <p>{textContent[currentTextIndex].text}</p>
                         </div>
