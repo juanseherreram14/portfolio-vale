@@ -28,7 +28,7 @@ const showcase = [
 const textContent = [
     {
         title: "Overview",
-        text: "Time: 1 week.\nObjective: make PCB for Simon Sense.\nTools: Eagle.\nMy professor Richard Arndt created a variation of the game Simon that instead of having buttons to get user feedback, it has LEDs used as light sensors. In his class we got to work on the whole process of fabricating a PCB for the game based on the mechanism he designed."
+        text: "Time: 1 week (November 2024).\nObjective: make PCB for Simon Sense.\nTools: Eagle.\nMy professor Richard Arndt created a variation of the game Simon that instead of having buttons to get user feedback, it has LEDs used as light sensors. In his class we got to work on the whole process of fabricating a PCB for the game based on the mechanism he designed."
     },
     {
         title: "Method",
