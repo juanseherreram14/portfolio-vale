@@ -73,9 +73,11 @@ function AllProjects() {
                                         ))}
                                     </div>
                                     {project.liveUrl ? (
+                                        <div className = "all-project-button"> 
                                         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                                             View Project
                                         </a>
+                                        </div>
                                     ) : (
                                         <button disabled>Project in development</button>
                                     )}
