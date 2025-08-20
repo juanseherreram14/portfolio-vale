@@ -1,35 +1,43 @@
 import React from 'react';
 import '../Styles/AllProjects.css'; // Create this CSS file too
-import golImage from '../Images/Gameoflife.png';
-import logoGame from '../Images/BCSPOTB_Logo.png';
-import gameImage from '../Images/GameplayScreenshot.png';
-import platImage from '../Images/PlatformImage.png';
+import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
+import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
+import simonSenseImage from '../Images/SimonSenseImage.jpg';
+import GDShowcase from '../Images/GenevaDriveShowcase.png'
 
 // Expanded projects array with more projects
 const allProjects = [
     {
         id: 1,
-        title: "Game of Life",
-        description: "Project focused on representing Conway's Game of Life. It's a simple, grid-based simulation that models how cells live, die, or reproduce over time based on a few rules.",
-        technologies: ["C++", "wxWidgets"],
-        imageUrl: golImage,
-        liveUrl: golImage
+        title: "Six Degrees of Freedom Platform",
+        description: "All around project focused on modeling and building a six dof platform to simulate movement.",
+        technologies: ["CAD design", "2D drawing", "PCB design", "3D printing", "PCB printing"],
+        imageUrl: platImage,
+        liveUrl: "/MainProject1"
     },
     {
         id: 2,
-        title: "Bean Conquest: Spill of the Beans",
-        description: "First person strategy videogame with the objective of conquering cities and battling enemies.",
-        technologies: ["C#", "Unity"],
-        imageUrl: logoGame,
-        liveUrl: gameImage
+        title: "Smart Pill Dispenser",
+        description: "Assistive technology project of a gadget made to serve as a pill dispenser.",
+        technologies: ["Product Design", "CAD design", "2D drawing", "PCB design", "3D printing", "PCB printing"],
+        imageUrl: smartPDImage,
+        liveUrl: "/MainProject2"
     },
     {
         id: 3,
-        title: "Flying Around",
-        description: "All around project focused on modeling and building a six dof platform to simulate movement during game.",
-        technologies: ["C++", "Solidworks", "PCB modeling", "Unity"],
-        imageUrl: platImage,
-        liveUrl: "https://youtu.be/_bN-MrGRLHM"
+        title: "PCB for Simon Sense",
+        description: "Project focused on Printed Circuit Board design and fabrication.",
+        technologies: ["PCB design", "PCB printing"],
+        imageUrl: simonSenseImage,
+        liveUrl: "/MainProject3"
+    },
+    {
+        id: 4,
+        title: "Geneva Drive Reverse Engineering",
+        description: "Modeled 3D printed version of the geneva drive mechanism.\n-Measured with calipers.\n-Designed and assembled parts in SolidWorks.\n-Did motion study.",
+        technologies: ["CAD design"],
+        imageUrl: GDShowcase,
+        liveUrl: "https://youtu.be/T8jMr-RRCVE"
     },
     // Add more projects here
 ];
@@ -48,7 +56,6 @@ function AllProjects() {
 
             <header className="all-projects-header">
                 <h1>All Projects</h1>
-                <p>Complete collection of my work and projects</p>
             </header>
 
             <section className="all-projects-grid-section">
@@ -57,7 +64,7 @@ function AllProjects() {
                         {allProjects.map(project => (
                             <article key={project.id} className="all-project-card">
                                 <img src={project.imageUrl} alt={project.title} />
-                                <div className="all-project-content">
+                                <div className="all-project-content" style={{ whiteSpace: 'pre-line' }}>
                                     <h3>{project.title}</h3>
                                     <p>{project.description}</p>
                                     <div className="all-tech-tags">

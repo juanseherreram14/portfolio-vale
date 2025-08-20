@@ -95,14 +95,14 @@ function Main() {
               </article>
             ))}
           </div>
-          {/* <div className="view-all-projects">
+          <div className="view-all-projects">
             <a
               href="/all-projects"
               className="view-all-btn"
             >
               View All Projects
             </a>
-          </div> */}
+          </div>
         </div>
       </section>
 
