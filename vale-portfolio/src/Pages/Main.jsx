@@ -80,7 +80,7 @@ const timelineData = [
   {
     id: 5,
     title: "What is next?\n\n",
-    description: "I’m excited for what’s ahead and **eager to apply my skills** in the technology industry. My goal is to make a meaningful impact while continuing to **learn and grow professionally**.",
+    description: "I’m excited for what’s ahead and **eager to apply and advance my skills** in the product development industry. My main goals are to make a **meaningful impact** and get **hands-on experience** while continuing to **learn and grow professionally**.",
     image: QM,
   }
   // Add more items as needed
