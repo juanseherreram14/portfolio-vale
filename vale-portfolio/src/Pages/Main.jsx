@@ -9,7 +9,7 @@ import luchito from '../Images/Luchito.jpg'
 import roboticsCompetition from '../Images/RoboticsCompetition.jpg'
 import fsProject from '../Images/fsProject.png'
 import FS from '../Images/FS.jpg'
-import QM from '../Images/QM.jpg'
+import QM from '../Images/QM.png'
 import { motion } from 'framer-motion';
 
 const projects = [
