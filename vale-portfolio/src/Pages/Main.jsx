@@ -16,7 +16,7 @@ const projects = [
   {
     id: 1,
     title: "Six Degrees of Freedom Platform",
-    description: "All around project focused on modeling and building a six dof platform to simulate movement.",
+    description: "Project focused on modeling and building a six dof platform to simulate movement.",
     imageUrl: platImage,
     liveUrl: "/MainProject1"
   },
