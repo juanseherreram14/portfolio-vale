@@ -15,17 +15,17 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    title: "Six Degrees of Freedom Platform",
-    description: "Project focused on modeling and building a six dof platform to simulate movement.",
-    imageUrl: platImage,
-    liveUrl: "/MainProject1"
-  },
-  {
-    id: 2,
     title: "Smart Pill Dispenser",
     description: "Assistive technology project of a gadget made to serve as a pill dispenser.",
     imageUrl: smartPDImage,
     liveUrl: "/MainProject2"
+  },
+  {
+    id: 2,
+    title: "Six Degrees of Freedom Platform",
+    description: "Project focused on modeling and building a six dof platform to simulate movement.",
+    imageUrl: platImage,
+    liveUrl: "/MainProject1"
   },
   {
     id: 3,

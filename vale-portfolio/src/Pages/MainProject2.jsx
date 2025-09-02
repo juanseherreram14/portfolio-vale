@@ -28,7 +28,7 @@ const showcase = [
 const textContent = [
     {
         title: "Overview",
-        text: "Time: 1 month (June 2025).\nObjective: create prototype of a smart pill dispenser.\nTools: SolidWorks, Arduino IDE, Eagle.\nThe idea was to work on an assistive technology project. I decided to go for a smart gadget to serve as a pill dispenser with alarm and clock functionality. There is a slot for each day of the week. It has an LED display where you can set up an alarm to have a reminder to take the pill. Then pushing a button will open the correct slot based on the day, the cover will turn certain degrees, wether it is for set up or to take the pill."
+        text: "Time: 1 month (June 2025).\nObjective: create prototype of a smart pill dispenser capable of making life easier for users who take pills frequently with an intuitive design that allows them to have access to the right pill at the right time.\nTools: SolidWorks, Arduino IDE, Eagle.\nThe idea was to work on an assistive technology project. I decided to go for a smart gadget to serve as a pill dispenser with alarm and clock functionality. There is a slot for each day of the week. It has an LED display where you can set up an alarm to have a reminder to take the pill. Then pushing a button will open the correct slot based on the day, the cover will turn certain degrees, wether it is for set up or to take the pill."
     },
     {
         title: "Method",
