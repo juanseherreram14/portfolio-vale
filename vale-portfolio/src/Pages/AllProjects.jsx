@@ -4,6 +4,7 @@ import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
 import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
 import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import GDShowcase from '../Images/GenevaDriveShowcase.png'
+import FSProject from '../Images/fsProject.png'
 
 // Expanded projects array with more projects
 const allProjects = [
@@ -39,6 +40,14 @@ const allProjects = [
         imageUrl: GDShowcase,
         liveUrl: "https://youtu.be/T8jMr-RRCVE"
     },
+        {
+        id: 5,
+        title: "Small Vehicle Controlled with Game Engine",
+        description: "-Designed vehicle parts in OnShape.\n-Laser cut pieces.\n-Assembled prototype.\n-Designed and integrated circuit of motors, motor driver and microcontroller.",
+        technologies: ["CAD design", "Circuit Integration", ],
+        imageUrl: FSProject,
+        liveUrl: "https://youtu.be/wqM2bh4iJ4g?si=9wOKq7hgrXDQmG1s"
+    }
     // Add more projects here
 ];
 
