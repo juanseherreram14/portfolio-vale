@@ -168,7 +168,7 @@ function Main() {
             transition={{ duration: 0.8 }}
           >
             <h1>Valentina Herrera Molano</h1>
-            <h2>Product Engineering Portfolio</h2>
+            <h2>Engineering Portfolio</h2>
             <p className="summary">
               Hello and welcome to my portfolio!
               I’m a SolidWorks certified engineer specializing in CAD design, PCB design, and digital fabrication.

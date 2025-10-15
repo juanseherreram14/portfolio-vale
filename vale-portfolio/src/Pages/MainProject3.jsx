@@ -25,10 +25,26 @@ const showcase = [
     }
 ];
 
+const renderFormattedText = (text) => {
+  if (!text) return null;
+
+  // Split text by **bold** markers and create JSX elements
+  const parts = text.split(/(\*\*.*?\*\*)/);
+
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      // Remove ** markers and make bold
+      const boldText = part.slice(2, -2);
+      return <strong key={index}>{boldText}</strong>;
+    }
+    return part;
+  });
+};
+
 const textContent = [
     {
         title: "Overview",
-        text: "Time: 1 week (November 2024).\nObjective: make PCB for Simon Sense.\nTools: Eagle.\nMy professor Richard Arndt created a variation of the game Simon that instead of having buttons to get user feedback, it has LEDs used as light sensors. In his class we got to work on the whole process of fabricating a PCB for the game based on the mechanism he designed."
+        text: "**Time:** 1 week (November 2024).\n**Objective:** make PCB for Simon Sense.\n**Tools:** Eagle, CNC Router, Soldering station.\nMy professor Richard Arndt created a variation of the game Simon that instead of having buttons to get user feedback, it has LEDs used as light sensors. In his class we got to work on the whole process of fabricating a PCB for the game based on the mechanism he designed."
     },
     {
         title: "Method",
@@ -56,7 +72,7 @@ function MainProject3() {
         <div className="main-project1-page">
             <nav className="MP1navbar MP1glass-navbar">
                 <div className="MP1navbar-left">
-                    <h1 className="MP1navbar-title">PCB for Simon Sense</h1>
+                    <h1 className="MP1navbar-title">PCB for Simon Sense (Class Project)</h1>
                 </div>
                 <ul className="MP1navbar-right">
                     <li><a href="/#home">Go back home</a></li>
@@ -79,7 +95,7 @@ function MainProject3() {
                     <div className="changing-text-container">
                         <div className="text-block" style={{ whiteSpace: 'pre-line' }}>
                             <h3>{textContent[currentTextIndex].title}</h3>
-                            <p>{textContent[currentTextIndex].text}</p>
+                            <p>{renderFormattedText(textContent[currentTextIndex].text)}</p>
                         </div>
 
                         <div className="text-controls">
