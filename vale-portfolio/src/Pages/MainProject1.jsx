@@ -28,7 +28,7 @@ const showcase = [
 const textContent = [
     {
         title: "Overview",
-        text: "**Main Role:** Digital Fabrication Specialist and PCB Design Engineer.\n**Time:** 3 months (December 2024 - February 2025).\n**Objective:** Design, simulate and build prototype of a small scale motion platform.\n**Tools:** SolidWorks, Eagle, Arduino IDE, Unity, 3D printer, Laser cutter, CNC Router.\nFor this project I drafted and fabricated a platform that moves in the six degrees of freedom. The movement is given by the rotation of six servo motors controlled by a microcontroller. It is a scaled version of a motion platform used to simulate movement and create immersive experiences in various applications."
+        text: "**Time:** 3 months (December 2024 - February 2025).\n**Objective:** Design, simulate and build prototype of a small scale motion platform.\n**Tools:** SolidWorks, Eagle, Arduino IDE, Unity, 3D printer, Laser cutter, CNC Router.\nFor this project I drafted and fabricated a platform that moves in the six degrees of freedom. The movement is given by the rotation of six servo motors controlled by a microcontroller. It is a scaled version of a motion platform used to simulate movement and create immersive experiences in various applications."
     },
     {
         title: "Method",
@@ -36,7 +36,7 @@ const textContent = [
     },
     {
         title: "Results",
-        text: "-Platform moves smoothly in all six degrees of freedom.\n-Fully functional prototype.\n-Finished product can be used to simulate movement for immersibve experiences in a small scale."
+        text: "-Platform moves smoothly in all six degrees of freedom.\n-Fully functional prototype.\n-Finished product can be used to simulate movement for immersive experiences in a small scale."
     }
 ];
 
