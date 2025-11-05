@@ -10,7 +10,7 @@ import FSProject from '../Images/fsProject.png'
 const allProjects = [
     {
         id: 1,
-        title: "Six Degrees of Freedom Platform",
+        title: "Six Degrees of Freedom Platform (December 2024 - February 2025)",
         description: "All around project focused on modeling and building a six dof platform to simulate movement.",
         technologies: ["CAD design", "2D drawing", "PCB design", "3D printing", "PCB printing"],
         imageUrl: platImage,
@@ -18,7 +18,7 @@ const allProjects = [
     },
     {
         id: 2,
-        title: "Smart Pill Dispenser",
+        title: "Smart Pill Dispenser (June 2025 - July 2025)",
         description: "Assistive technology project of a gadget made to serve as a pill dispenser.",
         technologies: ["Product Design", "CAD design", "2D drawing", "PCB design", "3D printing", "PCB printing"],
         imageUrl: smartPDImage,
@@ -26,7 +26,7 @@ const allProjects = [
     },
     {
         id: 3,
-        title: "PCB for Simon Sense",
+        title: "PCB for Simon Sense (November 2024)",
         description: "Project focused on Printed Circuit Board design and fabrication.",
         technologies: ["PCB design", "PCB printing"],
         imageUrl: simonSenseImage,
@@ -34,7 +34,7 @@ const allProjects = [
     },
     {
         id: 4,
-        title: "Geneva Drive Reverse Engineering",
+        title: "Geneva Drive Reverse Engineering (December 2024)",
         description: "Modeled 3D printed version of the geneva drive mechanism.\n-Measured with calipers.\n-Designed and assembled parts in SolidWorks.\n-Did motion study.",
         technologies: ["CAD design"],
         imageUrl: GDShowcase,
@@ -42,7 +42,7 @@ const allProjects = [
     },
         {
         id: 5,
-        title: "Small Vehicle Controlled with Game Engine",
+        title: "Small Vehicle Controlled with Game Engine (2023)",
         description: "-Designed vehicle parts in OnShape.\n-Laser cut pieces.\n-Assembled prototype.\n-Designed and integrated circuit of motors, motor driver and microcontroller.",
         technologies: ["CAD design", "Circuit Integration", ],
         imageUrl: FSProject,
