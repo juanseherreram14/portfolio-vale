@@ -10,6 +10,7 @@ import roboticsCompetition from '../Images/RoboticsCompetition.jpg'
 import fsProject from '../Images/fsProject.png'
 import FS from '../Images/FS.jpg'
 import QM from '../Images/QM.png'
+//import MRT from '../Images/MRT_windowFrame.jpg'
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -251,25 +252,6 @@ function Main() {
               )}
             </div>
           </div>
-
-          {/* Timeline Indicators
-          <div className="timeline-indicators">
-            {timelineData.map((_, index) => (
-              <div
-                key={index}
-                className={`indicator ${index === currentIndex ? 'active' : ''}`}
-                onClick={() => handleIndicatorClick(index)}
-                role="button"
-                tabIndex={0}
-                onKeyPress={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    handleIndicatorClick(index);
-                  }
-                }}
-                aria-label={`Go to timeline item ${index + 1}`}
-              />
-            ))}
-          </div> */}
         </div>
       </section>
 
