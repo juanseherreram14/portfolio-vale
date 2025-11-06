@@ -28,7 +28,7 @@ const showcase = [
 const textContent = [
     {
         title: "Overview",
-        text: "**Time:** 1 month (June 2025).\n**Objective:** design a human-centered assistive technology product to help make the user’s life easier.\n**Tools:** SolidWorks, Arduino IDE, Eagle, 3D printer, CNC milling machine.\nThe idea was to work on an assistive technology project. I decided to go for a smart gadget to serve as a pill dispenser with alarm and clock functionality. There is a slot for each day of the week. It has an LED display where you can set up an alarm to have a reminder to take the pill. Then pushing a button will open the correct slot based on the day, the cover will turn certain degrees, wether it is for set up or to take the pill."
+        text: "**Time:** 1 month (June 2025 - July 2025).\n**Objective:** design a human-centered assistive technology product to help make the user’s life easier.\n**Tools:** SolidWorks, Arduino IDE, Eagle, 3D printer, CNC milling machine.\nThe idea was to work on an assistive technology project. I decided to go for a smart gadget to serve as a pill dispenser with alarm and clock functionality. There is a slot for each day of the week. It has an LED display where you can set up an alarm to have a reminder to take the pill. Then pushing a button will open the correct slot based on the day, the cover will turn certain degrees, wether it is for set up or to take the pill."
     },
     {
         title: "Method",
