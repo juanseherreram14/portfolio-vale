@@ -4,7 +4,7 @@ import fotoPerfil from '../Images/FotoVale.JPG';
 import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
 import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
-import resume from '../Files/ValentinaHerrera_Resume.pdf';
+import resume from '../Files/ValentinaHerreraMolano_Resume.pdf';
 import luchito from '../Images/Luchito.jpg'
 import roboticsCompetition from '../Images/RoboticsCompetition.jpg'
 import fsProject from '../Images/fsProject.png'
