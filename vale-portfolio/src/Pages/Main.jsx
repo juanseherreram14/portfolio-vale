@@ -171,8 +171,8 @@ function Main() {
             <h2>Engineering Portfolio</h2>
             <p className="summary">
               Hello and welcome to my portfolio!
-              I’m a SolidWorks certified engineer specializing in CAD design, PCB design, and digital fabrication.
-              With a strong foundation in creating functional and innovative solutions, I aim to contribute my skills to the product development industry, from concept to prototype to final production.
+              I’m a SolidWorks certified engineer skilled in CAD design, PCB design, C++ programming, Unreal development and digital fabrication. 
+              Feel free to look at my work and contact me if you have any questions.
             </p>
           </motion.div>
         </div>
