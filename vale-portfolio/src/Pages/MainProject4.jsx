@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/MainProject1.css';
-import mainVideo from '../Videos/SimonSenseDemo.mp4';
+import mainVideo from '../Videos/MRT_ShortDemo.mp4';
 import SSPcb from '../Images/SimonSensePCB.png';
 import SSPcbSch from '../Images/SimonSenseSchematic.png'
 import SSPrint from '../Images/SimonSensePrint.jpg';
@@ -56,7 +56,7 @@ const textContent = [
     }
 ];
 
-function MainProject3() {
+function MainProject4() {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
     // Function to change to the next text

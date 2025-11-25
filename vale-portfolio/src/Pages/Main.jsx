@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../Styles/Portfolio.css';
 import fotoPerfil from '../Images/FotoVale.JPG';
-import simonSenseImage from '../Images/SimonSenseImage.jpg';
+//import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
 import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
 import resume from '../Files/ValentinaHerreraMolano_Resume.pdf';
@@ -10,7 +10,7 @@ import roboticsCompetition from '../Images/RoboticsCompetition.jpg'
 import fsProject from '../Images/fsProject.png'
 import FS from '../Images/FS.jpg'
 import QM from '../Images/QM.png'
-//import MRT from '../Images/MRT_windowFrame.jpg'
+import MRT from '../Images/MRT_windowFrame.jpg'
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -30,10 +30,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "PCB for Simon Sense",
-    description: "Project focused on Printed Circuit Board design and fabrication.",
-    imageUrl: simonSenseImage,
-    liveUrl: "/MainProject3"
+    title: "Full Sail University Tech Building Mixed Reality Tour",
+    description: "Project focused on developing an innovative tour of Full Sail's facilities using AR and VR technology.",
+    imageUrl: MRT,
+    liveUrl: "/MainProject4"
   }
 ];
 
