@@ -5,6 +5,7 @@ import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
 import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import GDShowcase from '../Images/GenevaDriveShowcase.png'
 import FSProject from '../Images/fsProject.png'
+import MRT from '../Images/MRT_windowFrame.jpg'
 
 // Expanded projects array with more projects
 const allProjects = [
@@ -40,15 +41,22 @@ const allProjects = [
         imageUrl: GDShowcase,
         liveUrl: "https://youtu.be/T8jMr-RRCVE"
     },
-        {
+    {
         id: 5,
         title: "Small Vehicle Controlled with Game Engine (2023)",
         description: "-Designed vehicle parts in OnShape.\n-Laser cut pieces.\n-Assembled prototype.\n-Designed and integrated circuit of motors, motor driver and microcontroller.",
-        technologies: ["CAD design", "Circuit Integration", ],
+        technologies: ["CAD design", "Circuit Integration",],
         imageUrl: FSProject,
         liveUrl: "https://youtu.be/wqM2bh4iJ4g?si=9wOKq7hgrXDQmG1s"
+    },
+    {
+        id: 6,
+        title: "Full Sail University Tech Building Mixed Reality Tour (May - June 2025)",
+        description: "Project focused on developing an innovative tour of Full Sail's facilities using AR and VR technology.",
+        technologies: ["Mixed Reality Tech", "Meta Quest 3", "Unreal Engine"],
+        imageUrl: MRT,
+        liveUrl: "/MainProject4"
     }
-    // Add more projects here
 ];
 
 function AllProjects() {
@@ -82,10 +90,10 @@ function AllProjects() {
                                         ))}
                                     </div>
                                     {project.liveUrl ? (
-                                        <div className = "all-project-button"> 
-                                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                                            View Project
-                                        </a>
+                                        <div className="all-project-button">
+                                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                                                View Project
+                                            </a>
                                         </div>
                                     ) : (
                                         <button disabled>Project in development</button>
