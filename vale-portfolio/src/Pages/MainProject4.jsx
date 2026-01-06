@@ -44,7 +44,7 @@ const renderFormattedText = (text) => {
 const textContent = [
     {
         title: "Overview",
-        text: "**Time:** 2 months (May 2025 - June 2025).\n**Objective:**  build an interactive application guiding users on a tour of Full Sail’s Technology Building.\n **Tools:** Unreal Engine, Meta Quest 3.\nThe guidelines for this project were to make the application for the Meta Quest 3 using Unreal. After a brainstorm session with my team we decided to implement virtual components that would enhance the user's experience while also showcasing the actual classroom and its real components. That way the tour would become an asset that makes the experience marketable and interesting."
+        text: "**Time:** 2 months (May 2025 - June 2025).\n**Objective:**  build an interactive application guiding users on a tour of Full Sail’s Technology Building.\n **Tools:** Unreal Engine, C++, Blueprint, Meta Quest 3.\nThe guidelines for this project were to make the application for the Meta Quest 3 using Unreal. After a brainstorm session with my team we decided to implement virtual components that would enhance the user's experience while also showcasing the actual classroom and its real components. That way the tour would become an asset that makes the experience marketable and interesting."
     },
     {
         title: "My Role",
