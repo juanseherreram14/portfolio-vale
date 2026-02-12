@@ -4,7 +4,7 @@ import fotoPerfil from '../Images/FotoVale.JPG';
 //import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
 import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
-import resume from '../Files/ValentinaHerreraMolano_Resume.pdf';
+// import resume from '../Files/ValentinaHerreraMolano_Resume.pdf';
 import luchito from '../Images/Luchito.jpg'
 import roboticsCompetition from '../Images/RoboticsCompetition.jpg'
 import fsProject from '../Images/fsProject.png'
@@ -13,7 +13,7 @@ import QM from '../Images/QM.png'
 import MRT from '../Images/MRT_windowFrame.jpg'
 import { motion } from 'framer-motion';
 
-const projects = [
+const projectsEn = [
   {
     id: 1,
     title: "Smart Pill Dispenser",
@@ -37,6 +37,30 @@ const projects = [
   }
 ];
 
+const projectsEs = [
+  {
+    id: 1,
+    title: "Dispensador de pastillas inteligente",
+    description: "Proyecto de tecnología asistiva: un dispositivo diseñado para dispensar pastillas.",
+    imageUrl: smartPDImage,
+    liveUrl: "/MainProject2"
+  },
+  {
+    id: 2,
+    title: "Plataforma de seis grados de libertad",
+    description: "Proyecto enfocado en construir y programar una plataforma de seis DOF para simular movimiento.",
+    imageUrl: platImage,
+    liveUrl: "/MainProject1"
+  },
+  {
+    id: 3,
+    title: "Recorrido de realidad mixta - Full Sail",
+    description: "Proyecto para desarrollar un recorrido innovador de las instalaciones de Full Sail usando AR y VR.",
+    imageUrl: MRT,
+    liveUrl: "/MainProject4"
+  }
+];
+
 const renderFormattedText = (text) => {
   if (!text) return null;
 
@@ -53,7 +77,7 @@ const renderFormattedText = (text) => {
   });
 };
 
-const timelineData = [
+const timelineDataEn = [
   {
     id: 1,
     title: "Meet Luchito\n2018",
@@ -87,12 +111,77 @@ const timelineData = [
   // Add more items as needed
 ];
 
+const timelineDataEs = [
+  {
+    id: 1,
+    title: "Conoce a Luchito\n2018",
+    description: "Comencé a hacer **electrónica** y **prototipado rápido** cuando tenía **13** años. Obtuve el segundo lugar en el Concurso de Innovación Científica y Tecnológica para Adolescentes de China con Luchito, un **robot traductor de lengua de señas** capaz de signar todas las letras del alfabeto español.",
+    image: luchito,
+  },
+  {
+    id: 2,
+    title: "Robotic Minds\n2018-2023",
+    description: "Formé parte de Robotic Minds, una escuela STEM, por casi **cinco años**. Aprendí mecatrónica y a trabajar en **proyectos en equipo** centrados en **resolución de problemas**, **adaptabilidad**, **liderazgo** y **comunicación**.",
+    image: roboticsCompetition,
+  },
+  {
+    id: 3,
+    title: "Mi camino a la universidad\n2023",
+    description: "**Diseñé** y **construí** un pequeño vehículo controlado con una aplicación de motor de juego mediante comandos seriales para solicitar una beca en Full Sail University. Mi proyecto fue aceptado y me otorgaron una **beca de matrícula completa**.",
+    image: fsProject,
+  },
+  {
+    id: 4,
+    title: "Graduación universitaria\n2025",
+    description: "Durante la universidad, avancé mi **experiencia técnica** y desarrollé fuertes **habilidades de gestión del tiempo**. Aprendí a **desempeñarme eficazmente en entornos de ritmo rápido** y cumplir plazos exigentes.",
+    image: FS,
+  },
+  {
+    id: 5,
+    title: "¿Qué sigue?\n\n",
+    description: "Estoy emocionada por lo que viene y **ansiosa por aplicar y mejorar mis habilidades**. Mis metas son generar un **impacto significativo** y obtener **experiencia práctica**, mientras continúo **aprendiendo y creciendo profesionalmente**.",
+    image: QM,
+  }
+];
+
 
 
 function Main() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [lang, setLang] = useState('en');
   const timelineRef = useRef(null);
   const [itemsPerView, setItemsPerView] = useState(3);
+
+  const translations = {
+    nav: {
+      about: { en: 'About', es: 'Acerca' },
+      projects: { en: 'Projects', es: 'Proyectos' },
+      contact: { en: 'Contact', es: 'Contacto' }
+    },
+    hero: {
+      subtitle: { en: 'Engineering Portfolio', es: 'Portafolio de Ingeniería' },
+      summary: {
+        en: `Hello and welcome to my portfolio!\nI’m a SolidWorks certified engineer skilled in CAD design, PCB design, object oriented programming, Unreal development and digital fabrication. \nFeel free to look at my work and contact me if you have any questions.`,
+        es: `¡Hola y bienvenid@ a mi portafolio!\nSoy ingeniera certificada en SolidWorks, con habilidades en diseño CAD, diseño de PCBs, programación orientada a objetos, desarrollo en Unreal y fabricación digital. \nRevisa mi trabajo y contáctame si tienes preguntas.`
+      }
+    },
+    sections: {
+      journey: { en: 'My Journey', es: 'Mi Trayectoria' },
+      featured: { en: 'Featured Projects', es: 'Proyectos Destacados' }
+    },
+    projectActions: { en: 'Show me', es: 'Ver proyecto' },
+    viewAll: { en: 'View All Projects', es: 'Ver todos los proyectos' },
+    contact: {
+      title: { en: 'CONTACT ME', es: 'CONTÁCTAME' },
+      phoneLabel: { en: 'Phone Number:', es: 'Teléfono:' },
+      emailLabel: { en: 'Email:', es: 'Correo:' },
+      linkedIn: { en: 'LinkedIn Profile', es: 'Perfil de LinkedIn' }
+    },
+    footer: { en: 'All rights reserved.', es: 'Todos los derechos reservados.' }
+  };
+
+  const currentProjects = lang === 'en' ? projectsEn : projectsEs;
+  const currentTimelineData = lang === 'en' ? timelineDataEn : timelineDataEs;
 
   const handlePrevious = () => {
     if (currentIndex > 0) {
@@ -101,7 +190,7 @@ function Main() {
   };
 
   const handleNext = () => {
-    const maxIndex = Math.max(0, timelineData.length - itemsPerView);
+    const maxIndex = Math.max(0, currentTimelineData.length - itemsPerView);
     if (currentIndex < maxIndex) {
       setCurrentIndex(currentIndex + 1);
     }
@@ -145,9 +234,18 @@ function Main() {
           <h1 className="navbar-title"> </h1>
         </div>
         <ul className="navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">{translations.nav.about[lang]}</a></li>
+          <li><a href="#projects">{translations.nav.projects[lang]}</a></li>
+          <li><a href="#contact">{translations.nav.contact[lang]}</a></li>
+          <li>
+            <button
+              className="lang-button"
+              onClick={() => setLang(prev => prev === 'en' ? 'es' : 'en')}
+              aria-label="Toggle language"
+            >
+              {lang === 'en' ? 'Español' : 'English'}
+            </button>
+          </li>
           {/* <li><a href={resume} target="_blank" rel="noopener noreferrer" >Resume</a></li> */}
         </ul>
       </nav>
@@ -169,11 +267,9 @@ function Main() {
             transition={{ duration: 0.8 }}
           >
             <h1>Valentina Herrera Molano</h1>
-            <h2>Engineering Portfolio</h2>
-            <p className="summary">
-              Hello and welcome to my portfolio!
-              I’m a SolidWorks certified engineer skilled in CAD design, PCB design, object oriented programming, Unreal development and digital fabrication. 
-              Feel free to look at my work and contact me if you have any questions.
+            <h2>{translations.hero.subtitle[lang]}</h2>
+            <p className="summary" style={{ whiteSpace: 'pre-line' }}>
+              {translations.hero.summary[lang]}
             </p>
           </motion.div>
         </div>
@@ -181,7 +277,7 @@ function Main() {
 
       <section className="trajectory-section" id="journey">
         <div className="trajectory-wrapper">
-          <h3>My Journey</h3>
+          <h3>{translations.sections.journey[lang]}</h3>
 
           <div className="timeline-container">
             {/* Navigation Buttons */}
@@ -197,7 +293,7 @@ function Main() {
             <button
               className="nav-button next"
               onClick={handleNext}
-              disabled={currentIndex >= Math.max(0, timelineData.length - itemsPerView)}
+              disabled={currentIndex >= Math.max(0, currentTimelineData.length - itemsPerView)}
               aria-label="Next timeline item"
             >
               ›
@@ -205,8 +301,8 @@ function Main() {
 
             {/* Timeline */}
             <div className="timeline" ref={timelineRef}>
-              {timelineData.length > 0 ? (
-                timelineData.map((item, index) => (
+              {currentTimelineData.length > 0 ? (
+                currentTimelineData.map((item, index) => (
                   <div key={item.id || index} className="timeline-item">
                     <div className="timeline-point"></div>
                     <div className="timeline-content">
@@ -257,9 +353,9 @@ function Main() {
 
       <section className="projects-section" id="projects">
         <div className="projects-wrapper">
-          <h3>Featured Projects</h3>
+          <h3>{translations.sections.featured[lang]}</h3>
           <div className="projects-grid">
-            {projects.map(project => (
+            {currentProjects.map(project => (
               <article key={project.id} className="project-card">
                 <img src={project.imageUrl} alt={project.title} />
                 <div>
@@ -267,10 +363,10 @@ function Main() {
                   <p>{project.description}</p>
                   {project.liveUrl ? (
                     <a href={project.liveUrl}>
-                      Show me
+                      {translations.projectActions[lang]}
                     </a>
                   ) : (
-                    <button disabled>Project in development</button>
+                    <button disabled>{lang === 'en' ? 'Project in development' : 'Proyecto en desarrollo'}</button>
                   )}
                 </div>
               </article>
@@ -281,25 +377,25 @@ function Main() {
               href="/all-projects"
               className="view-all-btn"
             >
-              View All Projects
+              {translations.viewAll[lang]}
             </a>
           </div>
         </div>
       </section>
 
       <section className="contact" id="contact">
-        <h3>CONTACT ME</h3>
+        <h3>{translations.contact.title[lang]}</h3>
         <div className="contact-grid">
           <div>
             <div className="info-block">
-              <p>Phone Number: 689 298 7888</p>
+              <p>{translations.contact.phoneLabel[lang]} +1 689 298 7888</p>
               <a
                 href="mailto:vhm110305@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ marginLeft: "1rem" }}
               >
-                Email: vhm110305@gmail.com
+                {translations.contact.emailLabel[lang]} vhm110305@gmail.com
               </a>
               <a
                 href="https://www.linkedin.com/in/valentinaherreramolano/?locale=en_US"
@@ -307,16 +403,16 @@ function Main() {
                 rel="noopener noreferrer"
                 style={{ marginLeft: "1rem" }}
               >
-                LinkedIn Profile
+                {translations.contact.linkedIn[lang]}
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <footer>
-        <p>© {new Date().getFullYear()} Valentina Herrera. All rights reserved.</p>
-      </footer>
+      {/* <footer>
+        <p>© {new Date().getFullYear()} Valentina Herrera. {translations.footer[lang]}</p>
+      </footer> */}
     </div>
   );
 }

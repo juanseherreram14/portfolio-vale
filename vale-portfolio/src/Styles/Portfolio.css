@@ -59,6 +59,29 @@ body {
   color: #3F1651cc;
 }
 
+/* Make language toggle button visually match navbar links */
+.navbar-right .lang-button,
+.navbar-right li .lang-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-right .lang-button:hover {
+  color: #3F1651cc;
+}
+
+.navbar-right .lang-button:focus {
+  outline: 2px solid rgba(255,255,255,0.12);
+  outline-offset: 2px;
+}
+
 /* HERO SECTION */
 .hero-section {
   width: 100%;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLanguage } from '../LanguageContext';
 import '../Styles/AllProjects.css'; // Create this CSS file too
 import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
 import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
@@ -7,8 +8,7 @@ import GDShowcase from '../Images/GenevaDriveShowcase.png'
 import FSProject from '../Images/fsProject.png'
 import MRT from '../Images/MRT_windowFrame.jpg'
 
-// Expanded projects array with more projects
-const allProjects = [
+const allProjectsEn = [
     {
         id: 1,
         title: "Six Degrees of Freedom Platform (December 2024 - February 2025)",
@@ -59,7 +59,66 @@ const allProjects = [
     }
 ];
 
+const allProjectsEs = [
+    {
+        id: 1,
+        title: "Plataforma de seis grados de libertad (Diciembre 2024 - Febrero 2025)",
+        description: "Proyecto enfocado en modelar y construir una plataforma de seis grados de libertad para simular movimiento.",
+        technologies: ["Diseño CAD", "Dibujo 2D", "Diseño PCB", "Impresión 3D", "Impresión PCB"],
+        imageUrl: platImage,
+        liveUrl: "/MainProject1"
+    },
+    {
+        id: 2,
+        title: "Dispensador de pastillas inteligente (Junio 2025 - Julio 2025)",
+        description: "Proyecto de tecnología asistiva: un dispositivo diseñado para dispensar pastillas.",
+        technologies: ["Diseño de producto", "Diseño CAD", "Dibujo 2D", "Diseño PCB", "Impresión 3D", "Impresión PCB"],
+        imageUrl: smartPDImage,
+        liveUrl: "/MainProject2"
+    },
+    {
+        id: 3,
+        title: "PCB para Simon Sense (Noviembre 2024)",
+        description: "Proyecto enfocado en el diseño y fabricación de una placa de circuito impreso.",
+        technologies: ["Diseño PCB", "Impresión PCB"],
+        imageUrl: simonSenseImage,
+        liveUrl: "/MainProject3"
+    },
+    {
+        id: 4,
+        title: "Ingeniería inversa de Geneva Drive (Diciembre 2024)",
+        description: "Modelo 3D impreso del mecanismo Geneva Drive.\n-Medición con calibradores.\n-Diseño y ensamblaje en SolidWorks.\n-Estudio de movimiento.",
+        technologies: ["Diseño CAD"],
+        imageUrl: GDShowcase,
+        liveUrl: "https://youtu.be/T8jMr-RRCVE"
+    },
+    {
+        id: 5,
+        title: "Vehículo pequeño controlado con motor de juego (2023)",
+        description: "-Diseño de piezas en OnShape.\n-Corte láser de piezas.\n-Ensamblaje de prototipo.\n-Diseño e integración de circuito de motores, driver y microcontrolador.",
+        technologies: ["Diseño CAD", "Integración de circuitos"],
+        imageUrl: FSProject,
+        liveUrl: "https://youtu.be/wqM2bh4iJ4g?si=9wOKq7hgrXDQmG1s"
+    },
+    {
+        id: 6,
+        title: "Recorrido de realidad mixta en Full Sail University (Mayo - Junio 2025)",
+        description: "Proyecto enfocado en desarrollar un recorrido innovador de las instalaciones de Full Sail usando tecnología AR y VR.",
+        technologies: ["Tecnología de Realidad Mixta", "Meta Quest 3", "Unreal Engine"],
+        imageUrl: MRT,
+        liveUrl: "/MainProject4"
+    }
+];
+
 function AllProjects() {
+    const { lang } = useLanguage();
+    const projects = lang === 'es' ? allProjectsEs : allProjectsEn;
+    const t = {
+        allProjects: { en: 'All Projects', es: 'Todos los Proyectos' },
+        goBack: { en: 'Go back home', es: 'Volver al inicio' },
+        view: { en: 'View Project', es: 'Ver Proyecto' },
+        inDev: { en: 'Project in development', es: 'Proyecto en desarrollo' }
+    };
     return (
         <div className="all-projects-page">
             <nav className="APnavbar APglass-navbar">
@@ -67,18 +126,18 @@ function AllProjects() {
                     <h1 className="APnavbar-title"> </h1>
                 </div>
                 <ul className="APnavbar-right">
-                    <li><a href="/#home">Go back home</a></li>
+                    <li><a href="/#home">{t.goBack[lang]}</a></li>
                 </ul>
             </nav>
 
             <header className="all-projects-header">
-                <h1>All Projects</h1>
+                <h1>{t.allProjects[lang]}</h1>
             </header>
 
             <section className="all-projects-grid-section">
                 <div className="all-projects-container">
                     <div className="all-projects-grid">
-                        {allProjects.map(project => (
+                        {projects.map(project => (
                             <article key={project.id} className="all-project-card">
                                 <img src={project.imageUrl} alt={project.title} />
                                 <div className="all-project-content" style={{ whiteSpace: 'pre-line' }}>
@@ -92,11 +151,11 @@ function AllProjects() {
                                     {project.liveUrl ? (
                                         <div className="all-project-button">
                                             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                                                View Project
+                                                {t.view[lang]}
                                             </a>
                                         </div>
                                     ) : (
-                                        <button disabled>Project in development</button>
+                                        <button disabled>{t.inDev[lang]}</button>
                                     )}
                                 </div>
                             </article>
