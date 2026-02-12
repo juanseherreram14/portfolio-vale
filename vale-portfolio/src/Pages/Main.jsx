@@ -148,7 +148,7 @@ function Main() {
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href={resume} target="_blank" rel="noopener noreferrer" >Resume</a></li>
+          {/* <li><a href={resume} target="_blank" rel="noopener noreferrer" >Resume</a></li> */}
         </ul>
       </nav>
       <section className="hero-section" id="about">
