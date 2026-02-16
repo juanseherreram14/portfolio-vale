@@ -72,7 +72,7 @@ function MainProject3() {
         <div className="main-project1-page">
             <nav className="MP1navbar MP1glass-navbar">
                 <div className="MP1navbar-left">
-                    <h1 className="MP1navbar-title">PCB for Simon Sense (Class Project)</h1>
+                    <h1 className="MP1navbar-title">PCB for Simon Sense</h1>
                 </div>
                 <ul className="MP1navbar-right">
                     <li><a href="/#home">Go back home</a></li>

@@ -77,7 +77,7 @@ function MainProject1() {
         <div className="main-project1-page">
             <nav className="MP1navbar MP1glass-navbar">
                 <div className="MP1navbar-left">
-                    <h1 className="MP1navbar-title">Six Degrees of Freedom Platform (Class Project)</h1>
+                    <h1 className="MP1navbar-title">Six Degrees of Freedom Platform</h1>
                 </div>
                 <ul className="MP1navbar-right">
                     <li><a href="https://youtu.be/_bN-MrGRLHM"
