@@ -47,7 +47,7 @@ const textContent = [
         text: "**Time:** 1 week (November 2024).\n**Objective:** make PCB for Simon Sense.\n**Tools:** Eagle, CNC Router, Soldering station.\nMy professor Richard Arndt created a variation of the game Simon that instead of having buttons to get user feedback, it has LEDs used as light sensors. In his class we got to work on the whole process of fabricating a PCB for the game based on the mechanism he designed."
     },
     {
-        title: "Method",
+        title: "Process",
         text: "-Make PCB schematic and design board in Eagle.\n-Print board.\n-Mount and solder electronic components.\nTest for shorts with multimeter."
     },
     {

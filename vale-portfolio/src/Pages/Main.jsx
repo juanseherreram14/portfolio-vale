@@ -148,7 +148,7 @@ const timelineDataEs = [
 
 function Main() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [lang, setLang] = useState('en');
+  const [lang, setLang] = useState('es');
   const timelineRef = useRef(null);
   const [itemsPerView, setItemsPerView] = useState(3);
 

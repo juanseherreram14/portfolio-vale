@@ -31,11 +31,11 @@ const textContent = [
         text: "**Time:** 1 month (June 2025 - July 2025).\n**Objective:** design a human-centered assistive technology product to help make the user’s life easier.\n**Tools:** SolidWorks, Adafruit Feather M0, Arduino IDE, C++, Eagle, 3D printer, CNC milling machine.\nThe idea was to work on an assistive technology project. I decided to go for a smart gadget to serve as a pill dispenser with alarm and clock functionality. There is a slot for each day of the week. It has an LED display where you can set up an alarm to have a reminder to take the pill. Then pushing a button will open the correct slot based on the day, the cover will turn certain degrees, wether it is for set up or to take the pill."
     },
     {
-        title: "Method",
+        title: "Process",
         text: "-**Design, assemble, and make motion study and animation** of the device in SolidWorks. I decided to make the design cylindrical so that the cover could work by turning on its own axis with a single servo motor. It also makes it practical to add the space needed for seven slots (one per day of week) with a circular pattern. The home position of the cover leaves open an extra slot designed to hold an LED diode and a buzzer that alert the user when it is time to take the pill. The main body is big enough to hold the circuit components, and it has a window for the LED display. The hole for the button is at a distance so that the user can look at the display and push it instinctively while holding the device.\n-**3D print the components.**\n-**Design PCB in Eagle and fabricate it.**\n-**Solder and mount electronic components to the PCB**.\n-**Make all the circuit connections.**\n-**Assemble 3D printed parts and PCB together.**"
     },
     {
-        title: "Method",
+        title: "Process",
         text: "-**Program Adafruit Feather M0 microcontroller** to control a servo motor that rotates by degrees to expose only one pill slot at a time, ensuring users access the correct medication. \n -**Build and program** user interface with LED display to allow access to motor control and alarm settings. The display shows current time and date captured from a real-time clock. It also gives the user visual feedback of the settings and alarm setup."
     },
     {
