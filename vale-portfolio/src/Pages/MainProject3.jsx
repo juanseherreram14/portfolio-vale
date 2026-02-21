@@ -41,7 +41,7 @@ const renderFormattedText = (text) => {
   });
 };
 
-const textContent = [
+const textContentEn = [
     {
         title: "Overview",
         text: "**Time:** 1 week (November 2024).\n**Objective:** make PCB for Simon Sense.\n**Tools:** Eagle, CNC Router, Soldering station.\nMy professor Richard Arndt created a variation of the game Simon that instead of having buttons to get user feedback, it has LEDs used as light sensors. In his class we got to work on the whole process of fabricating a PCB for the game based on the mechanism he designed."
@@ -56,13 +56,40 @@ const textContent = [
     }
 ];
 
+const textContentEs = [
+    {
+        title: "Descripción general",
+        text: "**Duración:** 1 semana (noviembre 2024).\n**Objetivo:** fabricar PCB para Simon Sense.\n**Herramientas:** Eagle, CNC Router, estación de soldadura.\nMi profesor Richard Arndt creó una variación del juego Simon que en vez de tener botones para recibir retroalimentación del usuario, tiene LEDs usados como sensores de luz. En su clase trabajamos en todo el proceso de fabricación de una PCB para el juego basado en el mecanismo que él diseñó."
+    },
+    {
+        title: "Proceso",
+        text: "-Hacer el esquema de la PCB y diseñar la placa en Eagle.\n-Imprimir la placa.\n-Montar y soldar los componentes electrónicos.\nProbar cortos con multímetro."
+    },
+    {
+        title: "Resultados",
+        text: "Todas las conexiones de la PCB funcionan correctamente y se podría usar para hacer un Simon Sense funcional."
+    }
+];
+
+const translations = {
+    nav: {
+        title: { en: 'PCB for Simon Sense', es: 'PCB para Simon Sense' },
+        home: { en: 'Go back home', es: 'Volver al inicio' }
+    },
+    controls: {
+        next: { en: 'Next', es: 'Siguiente' }
+    }
+};
+
 function MainProject3() {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
+    const [lang, setLang] = useState('es');
+    const currentTextContent = lang === 'en' ? textContentEn : textContentEs;
 
     // Function to change to the next text
     const changeText = () => {
         setCurrentTextIndex((prevIndex) =>
-            prevIndex === textContent.length - 1 ? 0 : prevIndex + 1
+            prevIndex === currentTextContent.length - 1 ? 0 : prevIndex + 1
         );
     };
     const selectText = (index) => {
@@ -72,10 +99,24 @@ function MainProject3() {
         <div className="main-project1-page">
             <nav className="MP1navbar MP1glass-navbar">
                 <div className="MP1navbar-left">
-                    <h1 className="MP1navbar-title">PCB for Simon Sense</h1>
+                    <h1 className="MP1navbar-title">{translations.nav.title[lang]}</h1>
                 </div>
                 <ul className="MP1navbar-right">
-                    <li><a href="/#home">Go back home</a></li>
+                    <li><a href="/#home">{translations.nav.home[lang]}</a></li>
+                    <li>
+                        <a
+                            href="#toggle-lang"
+                            className="MP1navbar-link"
+                            style={{ cursor: 'pointer' }}
+                            onClick={e => {
+                                e.preventDefault();
+                                setLang(prev => prev === 'en' ? 'es' : 'en');
+                            }}
+                            aria-label="Toggle language"
+                        >
+                            {lang === 'en' ? 'Español' : 'English'}
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <section classname="showcase-section">
@@ -94,15 +135,15 @@ function MainProject3() {
                 <div className="showcase-wrapper">
                     <div className="changing-text-container">
                         <div className="text-block" style={{ whiteSpace: 'pre-line' }}>
-                            <h3>{textContent[currentTextIndex].title}</h3>
-                            <p>{renderFormattedText(textContent[currentTextIndex].text)}</p>
+                            <h3>{currentTextContent[currentTextIndex].title}</h3>
+                            <p>{renderFormattedText(currentTextContent[currentTextIndex].text)}</p>
                         </div>
 
                         <div className="text-controls">
 
                             {/* Optional: Individual buttons for each text */}
                             <div className="text-selector-buttons">
-                                {textContent.map((_, index) => (
+                                {currentTextContent.map((_, index) => (
                                     <button
                                         key={index}
                                         onClick={() => selectText(index)}
@@ -113,7 +154,7 @@ function MainProject3() {
                                 ))}
                             </div>
                             <button onClick={changeText} className="change-btn">
-                                {'next'}
+                                {translations.controls.next[lang]}
                             </button>
                         </div>
                     </div>
