@@ -1,5 +1,5 @@
-import React from 'react';
-import { useLanguage } from '../LanguageContext';
+//import { useLanguage } from '../LanguageContext';
+import React, { useState } from 'react';
 import '../Styles/AllProjects.css'; // Create this CSS file too
 import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
 import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
@@ -111,7 +111,8 @@ const allProjectsEs = [
 ];
 
 function AllProjects() {
-    const { lang } = useLanguage();
+    //const { lang } = useLanguage();
+    const [lang, setLang] = useState('es');
     const projects = lang === 'es' ? allProjectsEs : allProjectsEn;
     const t = {
         allProjects: { en: 'All Projects', es: 'Todos los Proyectos' },
@@ -127,6 +128,20 @@ function AllProjects() {
                 </div>
                 <ul className="APnavbar-right">
                     <li><a href="/#home">{t.goBack[lang]}</a></li>
+                    <li>
+                        <a
+                            href="#toggle-lang"
+                            className="MP1navbar-link"
+                            style={{ cursor: 'pointer' }}
+                            onClick={e => {
+                                e.preventDefault();
+                                setLang(prev => prev === 'en' ? 'es' : 'en');
+                            }}
+                            aria-label="Toggle language"
+                        >
+                            {lang === 'en' ? 'Español' : 'English'}
+                        </a>
+                    </li>                    
                 </ul>
             </nav>
 
