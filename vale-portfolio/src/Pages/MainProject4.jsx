@@ -41,7 +41,7 @@ const renderFormattedText = (text) => {
     });
 };
 
-const textContent = [
+const textContentEn = [
     {
         title: "Overview",
         text: "**Time:** 2 months (May 2025 - June 2025).\n**Objective:**  build an interactive application guiding users on a tour of Full Sail’s Technology Building.\n **Tools:** Unreal Engine, C++, Blueprint, Meta Quest 3.\nThe guidelines for this project were to make the application for the Meta Quest 3 using Unreal. After a brainstorm session with my team we decided to implement virtual components that would enhance the user's experience while also showcasing the actual classroom and its real components. That way the tour would become an asset that makes the experience marketable and interesting."
@@ -52,13 +52,37 @@ const textContent = [
     }
 ];
 
+const textContentEs = [
+    {
+        title: "Descripción general",
+        text: "**Duración:** 2 meses (mayo 2025 - junio 2025).\n**Objetivo:** construir una aplicación interactiva que guíe a los usuarios en un recorrido por el Edificio de Tecnología de Full Sail.\n **Herramientas:** Unreal Engine, C++, Blueprint, Meta Quest 3.\nLas pautas para este proyecto eran hacer la aplicación para Meta Quest 3 usando Unreal. Tras una sesión de lluvia de ideas con mi equipo, decidimos implementar componentes virtuales que mejorarían la experiencia del usuario y, al mismo tiempo, mostrarían el aula real y sus componentes reales. Así, el recorrido se convertiría en un recurso que hace que la experiencia sea comercializable e interesante."
+    },
+    {
+        title: "Mi Rol",
+        text: "Me asignaron dos tareas principales. Mi primera responsabilidad en el equipo fue encontrar una forma de mostrar una transición de passthrough a completamente virtual, primero mostrando los elementos reales del aula y luego convirtiéndolos en un entorno virtual. Después de investigar, terminé creando un material dinámico con una configuración que permitía cambiar el nivel de passthrough. Luego implementé una función en Blueprint de Unreal que cambiaba el material con el tiempo, asegurando una transición suave durante un número específico de segundos. Después me asignaron hacer que la aplicación fuera aplicable a múltiples aulas. Así que implementé un singleton en un script de C++ para mover la instancia del blueprint según anclas posicionales y cambiar el entorno actualizando el valor de los placeholders en el script. La aplicación es una forma llamativa de promocionar la escuela, haciéndola comercializable para posibles nuevos estudiantes."
+    }
+];
+
+const translations = {
+    nav: {
+        title: { en: 'Full Sail University Mixed Reality Tour', es: 'Recorrido de Realidad Mixta - Full Sail University' },
+        demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER LA DEMO' },
+        home: { en: 'Go back home', es: 'Volver al inicio' }
+    },
+    controls: {
+        next: { en: 'Next', es: 'Siguiente' }
+    }
+};
+
 function MainProject4() {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
+    const [lang, setLang] = useState('es');
+    const currentTextContent = lang === 'en' ? textContentEn : textContentEs;
 
     // Function to change to the next text
     const changeText = () => {
         setCurrentTextIndex((prevIndex) =>
-            prevIndex === textContent.length - 1 ? 0 : prevIndex + 1
+            prevIndex === currentTextContent.length - 1 ? 0 : prevIndex + 1
         );
     };
     const selectText = (index) => {
@@ -68,13 +92,27 @@ function MainProject4() {
         <div className="main-project1-page">
             <nav className="MP1navbar MP1glass-navbar">
                 <div className="MP1navbar-left">
-                    <h1 className="MP1navbar-title">Full Sail University Mixed Reality Tour</h1>
+                    <h1 className="MP1navbar-title">{translations.nav.title[lang]}</h1>
                 </div>
                 <ul className="MP1navbar-right">
                     <li><a href="https://youtube.com/shorts/0Qw0hh6ZzSY?feature=share"
                         target="_blank"
-                        rel="noopener noreferrer">CLICK HERE TO WATCH DEMO</a></li>
-                    <li><a href="/#home">Go back home</a></li>
+                        rel="noopener noreferrer">{translations.nav.demo[lang]}</a></li>
+                    <li><a href="/#home">{translations.nav.home[lang]}</a></li>
+                    <li>
+                        <a
+                            href="#toggle-lang"
+                            className="MP1navbar-link"
+                            style={{ cursor: 'pointer' }}
+                            onClick={e => {
+                                e.preventDefault();
+                                setLang(prev => prev === 'en' ? 'es' : 'en');
+                            }}
+                            aria-label="Toggle language"
+                        >
+                            {lang === 'en' ? 'Español' : 'English'}
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <section classname="showcase-section">
@@ -93,15 +131,14 @@ function MainProject4() {
                 <div className="showcase-wrapper">
                     <div className="changing-text-container">
                         <div className="text-block" style={{ whiteSpace: 'pre-line' }}>
-                            <h3>{textContent[currentTextIndex].title}</h3>
-                            <p>{renderFormattedText(textContent[currentTextIndex].text)}</p>
+                            <h3>{currentTextContent[currentTextIndex].title}</h3>
+                            <p>{renderFormattedText(currentTextContent[currentTextIndex].text)}</p>
                         </div>
 
                         <div className="text-controls">
-
                             {/* Optional: Individual buttons for each text */}
                             <div className="text-selector-buttons">
-                                {textContent.map((_, index) => (
+                                {currentTextContent.map((_, index) => (
                                     <button
                                         key={index}
                                         onClick={() => selectText(index)}
@@ -112,7 +149,7 @@ function MainProject4() {
                                 ))}
                             </div>
                             <button onClick={changeText} className="change-btn">
-                                {'next'}
+                                {translations.controls.next[lang]}
                             </button>
                         </div>
                     </div>
