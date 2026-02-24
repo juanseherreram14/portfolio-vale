@@ -9,7 +9,7 @@ import luchito from '../Images/Luchito.jpg'
 import roboticsCompetition from '../Images/RoboticsCompetition.jpg'
 import fsProject from '../Images/fsProject.png'
 import FS from '../Images/FS.jpg'
-import QM from '../Images/QM.png'
+//import QM from '../Images/QM.png'
 import MRT from '../Images/MRT_windowFrame.jpg'
 import { motion } from 'framer-motion';
 
@@ -24,7 +24,7 @@ const projectsEn = [
   {
     id: 2,
     title: "Six Degrees of Freedom Platform",
-    description: "Project focused on building and programming a six dof platform to simulate movement.",
+    description: "Project focused on building and programming a six degrees of freedom platform to simulate movement.",
     imageUrl: platImage,
     liveUrl: "/MainProject1"
   },
@@ -41,21 +41,21 @@ const projectsEs = [
   {
     id: 1,
     title: "Dispensador de pastillas inteligente",
-    description: "Proyecto de tecnología asistiva: un dispositivo diseñado para dispensar pastillas.",
+    description: "Proyecto de tecnología asistiva enfocado al desarrollo de un dispositivo diseñado para dispensar pastillas.",
     imageUrl: smartPDImage,
     liveUrl: "/MainProject2"
   },
   {
     id: 2,
     title: "Plataforma de seis grados de libertad",
-    description: "Proyecto enfocado en construir y programar una plataforma de seis DOF para simular movimiento.",
+    description: "Proyecto enfocado en construir y programar una plataforma de seis grados de libertad para simular movimiento.",
     imageUrl: platImage,
     liveUrl: "/MainProject1"
   },
   {
     id: 3,
-    title: "Recorrido de realidad mixta - Full Sail",
-    description: "Proyecto para desarrollar un recorrido innovador de las instalaciones de Full Sail usando AR y VR.",
+    title: "Recorrido de realidad mixta - Full Sail University",
+    description: "Proyecto para desarrollar un recorrido innovador de las instalaciones de Full Sail usando Realidad Virtual y Realidad Aumentada.",
     imageUrl: MRT,
     liveUrl: "/MainProject4"
   }
@@ -92,30 +92,23 @@ const timelineDataEn = [
   },
   {
     id: 3,
-    title: "My path to college\n2023",
-    description: "**Designed** and **built** a small vehicle controlled with a game engine application through serial commands to apply for a scholarship at Full Sail University. My project was accepted and after going through the last stages I was awarded a **full tuition scholarship**.",
+    title: "My path to Full Sail University\n2023",
+    description: "**Designed** and **built** a small vehicle controlled with a Unity application through serial commands to apply for a scholarship at Full Sail University. My project was accepted and after going through the last stages I was awarded a **full tuition scholarship**.",
     image: fsProject,
   },
   {
     id: 4,
-    title: "College Graduation\n2025",
+    title: "Bachelor of Science in Simulation and Visualization\n2025",
     description: "During my time in college, I advanced my **technical expertise** while also developing strong **time management** skills. More importantly, I learned to **perform effectively in fast-paced environments** and consistently meet demanding deadlines.",
     image: FS,
-  },
-  {
-    id: 5,
-    title: "What is next?\n\n",
-    description: "I’m excited for what’s ahead and **eager to apply and advance my skills**. My main goals are to make a **meaningful impact** and get **hands-on experience** while continuing to **learn and grow professionally**.",
-    image: QM,
-  }
-  // Add more items as needed
+  }  // Add more items as needed
 ];
 
 const timelineDataEs = [
   {
     id: 1,
     title: "Conoce a Luchito\n2018",
-    description: "Comencé a hacer **electrónica** y **prototipado rápido** cuando tenía **13** años. Obtuve el segundo lugar en el Concurso de Innovación Científica y Tecnológica para Adolescentes de China con Luchito, un **robot traductor de lengua de señas** capaz de signar todas las letras del alfabeto español.",
+    description: "Comencé a aprender sobre **electrónica** y **prototipado rápido** cuando tenía **13** años. Obtuve el segundo lugar en el Concurso de Innovación Científica y Tecnológica para Adolescentes de China con Luchito, un **robot traductor de lengua de señas** capaz de signar todas las letras del alfabeto en español.",
     image: luchito,
   },
   {
@@ -126,21 +119,15 @@ const timelineDataEs = [
   },
   {
     id: 3,
-    title: "Mi camino a la universidad\n2023",
-    description: "**Diseñé** y **construí** un pequeño vehículo controlado con una aplicación de motor de juego mediante comandos seriales para solicitar una beca en Full Sail University. Mi proyecto fue aceptado y me otorgaron una **beca de matrícula completa**.",
+    title: "Mi camino a Full Sail University\n2023",
+    description: "**Diseñé** y **construí** un pequeño vehículo controlado con una aplicación de Unity mediante comandos seriales para participar para una beca en Full Sail University. Mi proyecto fue aceptado y me otorgaron una **beca de matrícula completa**.",
     image: fsProject,
   },
   {
     id: 4,
-    title: "Graduación universitaria\n2025",
+    title: "Bachelor of Science in Simulation and Visualization\n2025",
     description: "Durante la universidad, avancé mi **experiencia técnica** y desarrollé fuertes **habilidades de gestión del tiempo**. Aprendí a **desempeñarme eficazmente en entornos de ritmo rápido** y cumplir plazos exigentes.",
     image: FS,
-  },
-  {
-    id: 5,
-    title: "¿Qué sigue?\n\n",
-    description: "Estoy emocionada por lo que viene y **ansiosa por aplicar y mejorar mis habilidades**. Mis metas son generar un **impacto significativo** y obtener **experiencia práctica**, mientras continúo **aprendiendo y creciendo profesionalmente**.",
-    image: QM,
   }
 ];
 
