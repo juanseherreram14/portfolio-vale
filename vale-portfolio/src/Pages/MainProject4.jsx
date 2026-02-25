@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import '../Styles/MainProject.css';
 import mainVideo from '../Videos/MRT_ShortDemo.mp4';
+import MRT_NormalClassroom from '../Images/MRT_NormalClassroom.jpg';
+import MRT_WindowFrame from '../Images/MRT_windowFrame.jpg';
+import MRT_TourWindow from '../Images/MRT_tourView.jpg';
 import MRT_u1 from '../Images/MRT_u1.png';
 import MRT_u2 from '../Images/MRT_u2.png';
 import MRT_u3 from '../Images/MRT_u3.png';
@@ -9,18 +12,30 @@ import MRT_u4 from '../Images/MRT_u4.png';
 const showcase = [
     {
         id: 1,
-        imageUrl: MRT_u1
+        imageUrl: MRT_NormalClassroom
     },
     {
         id: 2,
-        imageUrl: MRT_u2
+        imageUrl: MRT_WindowFrame
     },
     {
         id: 3,
-        imageUrl: MRT_u3
+        imageUrl: MRT_TourWindow
     },
     {
         id: 4,
+        imageUrl: MRT_u1
+    },
+    {
+        id: 5,
+        imageUrl: MRT_u2
+    },
+    {
+        id: 6,
+        imageUrl: MRT_u3
+    },
+    {
+        id: 7,
         imageUrl: MRT_u4
     }
 ];
@@ -66,7 +81,7 @@ const textContentEs = [
 const translations = {
     nav: {
         title: { en: 'Full Sail University Mixed Reality Tour', es: 'Recorrido de Realidad Mixta - Full Sail University' },
-        demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER LA DEMO' },
+        demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER LA DEMONSTRACIÓN' },
         home: { en: 'Go back home', es: 'Volver al inicio' }
     },
     controls: {
