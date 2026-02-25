@@ -2,25 +2,65 @@ import React, { useState } from 'react';
 import '../Styles/MainProject.css';
 import mainVideo from '../Videos/StewP_Isometric_Animation.mp4';
 import SPCad from '../Images/SP_CAD.png';
+import SPCad3 from '../Images/SPCad3.png';  
+import SPCad2 from '../Images/SP_CAD2.png';
+import SPCadAssem from '../Images/SPCadAssem.png';
+import SPPrint1 from '../Images/TOP_Print.jpeg';
+import SPCut from '../Images/MiddleCut.jpeg';
+import SPPrint2 from '../Images/BottomPrint.jpeg';
 import SPPcb from '../Images/SP_PCB.png';
 import SPPcb2 from '../Images/SP_PCB_Done.jpg'
+import SPAssem1 from '../Images/Assembly1.jpeg';
+import SPAssem2 from '../Images/Assembly2.jpeg';
 import SPFinal from '../Images/SP_Final.jpg';
 
 const showcase = [
     {
         id: 1,
-        imageUrl: SPCad
+        imageUrl: SPCad3
     },
     {
         id: 2,
-        imageUrl: SPPcb
+        imageUrl: SPCadAssem
     },
     {
         id: 3,
-        imageUrl: SPPcb2
+        imageUrl: SPCad
     },
     {
         id: 4,
+        imageUrl: SPCad2
+    },
+    {
+        id: 5,
+        imageUrl: SPPrint1
+    },
+    {
+        id: 6,
+        imageUrl: SPCut
+    },
+    {
+        id: 7,
+        imageUrl: SPPrint2
+    },
+    {
+        id: 8,
+        imageUrl: SPPcb
+    },
+    {
+        id: 9,
+        imageUrl: SPPcb2
+    },
+    {
+        id: 10,
+        imageUrl: SPAssem1
+    },
+    {
+        id: 11,
+        imageUrl: SPAssem2
+    },
+    {
+        id: 12,
         imageUrl: SPFinal
     }
 ];
@@ -58,7 +98,7 @@ const textContentEs = [
 const translations = {
     nav: {
       title: { en: 'Six Degrees of Freedom Platform', es: 'Plataforma de Seis Grados de Libertad' },
-      demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER LA DEMO' },
+      demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER LA DEMONSTRACIÓN' },
       home: { en: 'Go back home', es: 'Volver al inicio' }
     }
 };
