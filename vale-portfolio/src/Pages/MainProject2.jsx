@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import '../Styles/MainProject1.css';
-import mainVideo from '../Videos/SmartPillDispenserAnimation.mp4';
-import SPDCad from '../Images/SmartPillDispenser_CAD.png';
+import mainVideo from '../Videos/SmartPillDispenserCADDemo.mp4';
+import SPDCadDraw1 from '../Images/SmartPillDispenser_CAD.png';
+import SPDCadDraw2 from '../Images/SPD_CADDraw2.png';
+import SPDCadISO from '../Images/SPD_ContainerISO.png';
+import SPDCadTop from '../Images/SPD_Top.png';
+import SPDPcbBrd from '../Images/SPD_PCB_Board.png';
+import SPDPcbSch from '../Images/SPD_PCB_Sch.png';
 import SPDCircuit from '../Images/SmartPillDispenser_Circuit.jpg';
 import SPDFinalFront from '../Images/SmartPillDispenser_FrontFinal.png.jpg'
 import SPDFinalISO from '../Images/SmartPillDispenser_IsoFinal.png.jpg'
@@ -9,18 +14,38 @@ import SPDFinalISO from '../Images/SmartPillDispenser_IsoFinal.png.jpg'
 const showcase = [
     {
         id: 1,
-        imageUrl: SPDCad
+        imageUrl: SPDCadDraw1
     },
     {
         id: 2,
-        imageUrl: SPDCircuit
-    },
+        imageUrl: SPDCadDraw2
+    },    
     {
         id: 3,
+        imageUrl: SPDCadISO
+    },  
+    {
+        id: 4,
+        imageUrl: SPDCadTop
+    },    
+    {
+        id: 5,
+        imageUrl: SPDPcbBrd
+    },    
+    {
+        id: 6,
+        imageUrl: SPDPcbSch
+    },
+    {
+        id: 7,
+        imageUrl: SPDCircuit 
+    },
+    {
+        id: 8,
         imageUrl: SPDFinalFront
     },
     {
-        id: 4,
+        id: 9,
         imageUrl: SPDFinalISO
     }
 ];
