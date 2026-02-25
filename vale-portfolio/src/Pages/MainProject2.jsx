@@ -68,7 +68,7 @@ const textContentEn = [
 const textContentEs = [
     {
         title: "Descripción general",
-        text: "**Duración:** 1 mes (junio 2025 - julio 2025).\n**Objetivo:** diseñar un producto de tecnología asistiva centrado en el usuario para facilitarle la vida.\n**Herramientas:** SolidWorks, Adafruit Feather M0, Arduino IDE, C++, Eagle, impresora 3D, fresadora CNC.\nEl proyecto consistió en el desarrollo de un producto de tecnología asistiva. Decidí crear un dispositivo inteligente para servir como dispensador de pastillas con función de alarma y reloj. Hay un espacio para cada día de la semana y tiene una pantalla LED donde se puede configurar una alarma para que el usuario recuerde tomar la pastilla. Al presionar el botón de la derecha, se abrirá el espacio correcto según el día. Esto es posible ya que la tapa gira ciertos grados, exponiendo el espacio, ya sea para poner o tomar la pastilla."
+        text: "**Duración:** 1 mes (Junio 2025 - Julio 2025).\n**Objetivo:** diseñar un producto de tecnología asistiva centrado en el usuario para facilitarle la vida.\n**Herramientas:** SolidWorks, Adafruit Feather M0, Arduino IDE, C++, Eagle, impresora 3D, fresadora CNC.\nEl proyecto consistió en el desarrollo de un producto de tecnología asistiva. Decidí crear un dispositivo inteligente para servir como dispensador de pastillas con función de alarma y reloj. Hay un espacio para cada día de la semana y tiene una pantalla LED donde se puede configurar una alarma para que el usuario recuerde tomar la pastilla. Al presionar el botón de la derecha, se abrirá el espacio correcto según el día. Esto es posible ya que la tapa gira ciertos grados, exponiendo el espacio, ya sea para poner o tomar la pastilla."
     },
     {
         title: "Proceso",

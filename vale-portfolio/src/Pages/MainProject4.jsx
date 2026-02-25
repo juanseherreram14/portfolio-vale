@@ -70,7 +70,7 @@ const textContentEn = [
 const textContentEs = [
     {
         title: "Descripción general",
-        text: "**Duración:** 2 meses (mayo 2025 - junio 2025).\n**Objetivo:** construir una aplicación interactiva que guíe a los usuarios en un recorrido por el Edificio de Tecnología de Full Sail.\n **Herramientas:** Unreal Engine, C++, Blueprint, Meta Quest 3.\nLas pautas para este proyecto eran hacer la aplicación para Meta Quest 3 usando Unreal. Tras una sesión de lluvia de ideas con mi equipo, decidimos implementar componentes virtuales que mejorarían la experiencia del usuario y, al mismo tiempo, mostrarían el aula real y sus componentes reales. Así, el recorrido se convertiría en un recurso que hace que la experiencia sea comercializable e interesante."
+        text: "**Duración:** 2 meses (Mayo 2025 - Junio 2025).\n**Objetivo:** construir una aplicación interactiva que guíe a los usuarios en un recorrido por el Edificio de Tecnología de Full Sail.\n **Herramientas:** Unreal Engine, C++, Blueprint, Meta Quest 3.\nLas pautas para este proyecto eran hacer la aplicación para Meta Quest 3 usando Unreal. Tras una sesión de lluvia de ideas con mi equipo, decidimos implementar componentes virtuales que mejorarían la experiencia del usuario y, al mismo tiempo, mostrarían el aula real y sus componentes reales. Así, el recorrido se convertiría en un recurso que hace que la experiencia sea comercializable e interesante."
     },
     {
         title: "Mi Rol",

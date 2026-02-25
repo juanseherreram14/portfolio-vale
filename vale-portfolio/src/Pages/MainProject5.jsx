@@ -1,42 +1,42 @@
 import React, { useState } from 'react';
 import '../Styles/MainProject.css';
-import mainVideo from '../Videos/MRT_ShortDemo.mp4';
-import MRT_NormalClassroom from '../Images/MRT_NormalClassroom.jpg';
-import MRT_WindowFrame from '../Images/MRT_windowFrame.jpg';
-import MRT_TourWindow from '../Images/MRT_tourView.jpg';
-import MRT_u1 from '../Images/MRT_u1.png';
-import MRT_u2 from '../Images/MRT_u2.png';
-import MRT_u3 from '../Images/MRT_u3.png';
-import MRT_u4 from '../Images/MRT_u4.png';
+//import mainImage from '../Images/GameMathMain.png';
+import UVMap1 from '../Images/UVMap1.png';
+import UVMap2 from '../Images/UVMap2.png';
+import UVMap3 from '../Images/UVMap3.png';
+import projEffect1 from '../Images/ProjectorEffect1.png';
+import projEffect2 from '../Images/ProjectorEffect2.png';
+import projEffect3 from '../Images/ProjectorEffect3.png';
+import projEffect4 from '../Images/ProjectorEffect4.png';
 
 const showcase = [
     {
         id: 1,
-        imageUrl: MRT_NormalClassroom
+        imageUrl: UVMap1
     },
     {
         id: 2,
-        imageUrl: MRT_WindowFrame
+        imageUrl: UVMap2
     },
     {
         id: 3,
-        imageUrl: MRT_TourWindow
+        imageUrl: UVMap3
     },
     {
         id: 4,
-        imageUrl: MRT_u1
+        imageUrl: projEffect1
     },
     {
         id: 5,
-        imageUrl: MRT_u2
+        imageUrl: projEffect2
     },
     {
         id: 6,
-        imageUrl: MRT_u3
+        imageUrl: projEffect3
     },
     {
         id: 7,
-        imageUrl: MRT_u4
+        imageUrl: projEffect4
     }
 ];
 
@@ -59,33 +59,37 @@ const renderFormattedText = (text) => {
 const textContentEn = [
     {
         title: "Overview",
-        text: "**Time:** 2 months (May 2025 - June 2025).\n**Objective:**  build an interactive application guiding users on a tour of Full Sail’s Technology Building.\n **Tools:** Unreal Engine, C++, Blueprint, Meta Quest 3.\nThe guidelines for this project were to make the application for the Meta Quest 3 using Unreal. After a brainstorm session with my team we decided to implement virtual components that would enhance the user's experience while also showcasing the actual classroom and its real components. That way the tour would become an asset that makes the experience marketable and interesting."
+        text: "**Time:** (January 2026 - In development).\n**Objective:** enhance user experience by implementing dynamic materials and effects to the 3D modeled calculator.\n **Tools:** Unreal Engine, Meta Quest 3."
     },
     {
-        title: "My Role",
-        text: "I was assigned two main tasks. My first responsibility on the team was to find a way to show a transition from passthrough to full virtual, first showcasing the actual classroom elements and then converting them into a virtual environment. After conducting research, I ended up creating a dynamic material with a configuration that allowed changing the passthrough level. Then I implemented a function in Unreal Blueprint that changed the material over time, ensuring a smooth transition over a specified number of seconds. I was then assigned to make the application applicable to multiple classrooms. So I implemented a singleton in a C++ script to move the blueprint instance based on positional anchors and to change the environment by updating the value of the placeholders in the script. The application is an eye-catching way to promote the school, making it marketable for potential new students."
+        title: "Process",
+        text: "-**Energy effect:** I began by creating a dynamic material for the portions of the calculator that project light. Then I made a function to handle the change of opacity with interpolation using a timeline in Unreal's blueprint. This way it creates the effect by changing the opacity parameter of the material over time.\n-**UV mapping:** Since the keys of the calculator had its own meshes, I decided to assign a number and letter to map an image based on the number of keys. Then I created a material specifically to only display a portion of the image based on the UV coordinates. Finally, I applied them to the calculator keys using material instances.\n -**Projection effect:** I made a material with a panner and noise node to create movement in the texture and then I applied it to a cone mesh. Since that didn't look quite right, I kept researching different ways to create this effect in Unreal. So finally, I ended up using Unreal's Simple Light Beam material and modifying it's parameters to achieve the desired look. Finally to reduce the static look of the effect, I created a function in blueprint to change the intensity of the light based on the movement of the calculator."
     }
 ];
 
 const textContentEs = [
     {
         title: "Descripción general",
-        text: "**Duración:** 2 meses (mayo 2025 - junio 2025).\n**Objetivo:** construir una aplicación interactiva que guíe a los usuarios en un recorrido por el Edificio de Tecnología de Full Sail.\n **Herramientas:** Unreal Engine, C++, Blueprint, Meta Quest 3.\nLas pautas para este proyecto eran hacer la aplicación para Meta Quest 3 usando Unreal. Tras una sesión de lluvia de ideas con mi equipo, decidimos implementar componentes virtuales que mejorarían la experiencia del usuario y, al mismo tiempo, mostrarían el aula real y sus componentes reales. Así, el recorrido se convertiría en un recurso que hace que la experiencia sea comercializable e interesante."
+        text: "**Duración:** 2 meses (Enero 2026 - En desarrollo).\n**Objetivo:** mejorar la experiencia del usuario implementando materiales dinámicos y efectos a la calculadora 3D modelada para la aplicación.\n **Herramientas:** Unreal Engine, Meta Quest 3."
     },
     {
-        title: "Mi Rol",
-        text: "Me asignaron dos tareas principales. Mi primera responsabilidad en el equipo fue encontrar una forma de mostrar una transición de passthrough a completamente virtual, primero mostrando los elementos reales del aula y luego convirtiéndolos en un entorno virtual. Después de investigar, terminé creando un material dinámico con una configuración que permitía cambiar el nivel de passthrough. Luego implementé una función en Blueprint de Unreal que cambiaba el material con el tiempo, asegurando una transición suave durante un número específico de segundos. Después me asignaron hacer que la aplicación fuera aplicable a múltiples aulas. Así que implementé un singleton en un script de C++ para mover la instancia del blueprint según anclas posicionales y cambiar el entorno actualizando el valor de los placeholders en el script. La aplicación es una forma llamativa de promocionar la escuela, haciéndola comercializable para posibles nuevos estudiantes."
+        title: "Proceso",
+        text: "-**Efecto de energía:** Comencé creando un material dinámico para las partes de la calculadora que proyectan luz. Luego hice una función para manejar el cambio de opacidad con interpolación usando una línea de tiempo en el blueprint de Unreal. De esta manera, se crea el efecto al cambiar el parámetro de opacidad del material a lo largo del tiempo.\n-**Mapeo UV:** Dado que las teclas de la calculadora tenían sus propias mallas, decidí asignar un número y letra para mapear una imagen basado en el número de teclas. Luego creé un material específicamente para mostrar solo una porción de la imagen basada en las coordenadas UV. Finalmente, los apliqué a las teclas de la calculadora usando instancias de materiales.\n -**Efecto de proyección:** Hice un material con un nodo panner y ruido para crear movimiento en la textura y luego lo apliqué a una malla cónica. Dado que eso no se veía del todo bien, seguí investigando diferentes formas de crear este efecto en Unreal. Así que finalmente, terminé usando el material Simple Light Beam de Unreal y modificando sus parámetros para lograr el aspecto deseado. Finalmente, para reducir el aspecto estático del efecto, creé una función en blueprint para cambiar la intensidad de la luz basada en el movimiento de la calculadora."   
     }
 ];
 
 const translations = {
     nav: {
-        title: { en: 'Full Sail University Mixed Reality Tour', es: 'Recorrido de Realidad Mixta - Full Sail University' },
-        demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER LA DEMONSTRACIÓN' },
+        title: { en: 'Game Math', es: 'Game Math' },
+        //demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER LA DEMONSTRACIÓN' },
         home: { en: 'Go back home', es: 'Volver al inicio' }
     },
     controls: {
         next: { en: 'Next', es: 'Siguiente' }
+    },
+    comingSoon:{
+        en: "In development - Video demonstration coming soon!",
+        es: "¡En desarrollo - Demostración en video próximamente!"
     }
 };
 
@@ -110,9 +114,6 @@ function MainProject5() {
                     <h1 className="MP1navbar-title">{translations.nav.title[lang]}</h1>
                 </div>
                 <ul className="MP1navbar-right">
-                    <li><a href="https://youtube.com/shorts/0Qw0hh6ZzSY?feature=share"
-                        target="_blank"
-                        rel="noopener noreferrer">{translations.nav.demo[lang]}</a></li>
                     <li><a href="/#home">{translations.nav.home[lang]}</a></li>
                     <li>
                         <a
@@ -132,16 +133,11 @@ function MainProject5() {
             </nav>
             <section classname="showcase-section">
                 <div className="video-container">
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="background-video"
-                    >
-                        <source src={mainVideo} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    {/* <article className="background-video">
+                        {/* You can swap the image below for a video if needed }
+                        <img src={mainImage} alt="Main Project Visual" style={{ width: '75%', height: '90%', objectFit: 'cover'}} />
+                    </article> */}
+                    {translations.comingSoon[lang]}
                 </div>
                 <div className="showcase-wrapper">
                     <div className="changing-text-container">

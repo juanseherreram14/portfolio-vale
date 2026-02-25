@@ -59,7 +59,7 @@ const textContentEn = [
 const textContentEs = [
     {
         title: "Descripción general",
-        text: "**Duración:** 1 semana (noviembre 2024).\n**Objetivo:** fabricar PCB para Simon Sense.\n**Herramientas:** Eagle, CNC Router, estación de soldadura.\nMi profesor Richard Arndt creó una variación del juego Simon que en vez de tener botones para recibir retroalimentación del usuario, tiene LEDs usados como sensores de luz. En su clase trabajamos en todo el proceso de fabricación de una PCB para el juego basado en el mecanismo que él diseñó."
+        text: "**Duración:** 1 semana (Noviembre 2024).\n**Objetivo:** fabricar PCB para Simon Sense.\n**Herramientas:** Eagle, CNC Router, estación de soldadura.\nMi profesor Richard Arndt creó una variación del juego Simon que en vez de tener botones para recibir retroalimentación del usuario, tiene LEDs usados como sensores de luz. En su clase trabajamos en todo el proceso de fabricación de una PCB para el juego basado en el mecanismo que él diseñó."
     },
     {
         title: "Proceso",
