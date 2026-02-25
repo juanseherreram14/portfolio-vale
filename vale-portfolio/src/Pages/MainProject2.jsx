@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/MainProject1.css';
+import '../Styles/MainProject.css';
 import mainVideo from '../Videos/SmartPillDispenserCADDemo.mp4';
 import SPDCadDraw1 from '../Images/SmartPillDispenser_CAD.png';
 import SPDCadDraw2 from '../Images/SPD_CADDraw2.png';

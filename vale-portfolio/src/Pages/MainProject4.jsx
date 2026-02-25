@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/MainProject1.css';
+import '../Styles/MainProject.css';
 import mainVideo from '../Videos/MRT_ShortDemo.mp4';
 import MRT_u1 from '../Images/MRT_u1.png';
 import MRT_u2 from '../Images/MRT_u2.png';

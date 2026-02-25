@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/MainProject1.css';
+import '../Styles/MainProject.css';
 import mainVideo from '../Videos/StewP_Isometric_Animation.mp4';
 import SPCad from '../Images/SP_CAD.png';
 import SPPcb from '../Images/SP_PCB.png';

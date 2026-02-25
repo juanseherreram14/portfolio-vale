@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/MainProject1.css';
+import '../Styles/MainProject.css';
 import mainVideo from '../Videos/SimonSenseDemo.mp4';
 import SSPcb from '../Images/SimonSensePCB.png';
 import SSPcbSch from '../Images/SimonSenseSchematic.png'
