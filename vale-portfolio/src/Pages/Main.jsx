@@ -146,7 +146,7 @@ function Main() {
       contact: { en: 'Contact', es: 'Contacto' }
     },
     hero: {
-      subtitle: { en: 'Engineering Portfolio', es: 'Portafolio de Ingeniería' },
+      subtitle: { en: 'Bachelor of Science in Simulation and Visualization - Engineering Portfolio', es: 'Bachelor of Science in Simulation and Visualization - Portafolio de Ingeniería' },
       summary: {
         en: `Hello and welcome to my portfolio!\nI’m a SolidWorks certified engineer skilled in CAD design, PCB design, object oriented programming, Unreal development and digital fabrication. \nFeel free to look at my work and contact me if you have any questions.`,
         es: `¡Hola y bienvenid@ a mi portafolio!\nSoy ingeniera certificada en SolidWorks, con habilidades en diseño CAD, diseño de PCBs, programación orientada a objetos, desarrollo en Unreal y fabricación digital. \nRevisa mi trabajo y contáctame si tienes preguntas.`

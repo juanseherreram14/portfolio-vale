@@ -37,17 +37,13 @@ const textContentEn = [
     {
         title: "Process",
         text: "-**Program ESP32 microcontroller to configure serial communication with a unity app for testing and to calibrate the platform correctly.** After measuring the range of motion of all the servo motors, I saved the results in a matrix to make a program that handles the movement of the platform in the six degrees of freedom continuously, just as seen in the animation to the left. \n-**Develop game simulation for the platform** in Unity of a robot flying through traffic using C# scripts that handle serial communication and in game physics.\n -Connect two **touch sensors** that serve as controls for the user to move the platform and virtual robot synchronically. \n -Gather sensor data and stream it to the Unity app to create movement based on whether the user is touching the sensor and for how long."
-    },
-    {
-        title: "Results",
-        text: "-Platform moves smoothly in all six degrees of freedom.\n-Fully functional prototype.\n-Finished product generates an immersive and gamified experience for the user."
     }
 ];
 
 const textContentEs = [
     {
         title: "Descripción general",
-        text: "**Duración:** 3 meses (Diciembre 2024 - Febrero 2025).\n**Objetivo:** Diseñar y construir una plataforma de movimiento Stewart de pequeña escala.\n**Herramientas:** SolidWorks, Eagle, Arduino IDE, Unity, C#, impresora 3D, cortadora láser, fresadora CNC.\nPara este proyecto diseñé y fabricqué una plataforma que se mueve en los seis grados de libertad. El movimiento es dado por la rotación de seis servo motores controlados por un microcontrolador Adafruit ESP32. Es una versión escalada de una plataforma de movimiento usada para simular movimiento y crear experiencias inmersivas en diversas aplicaciones."
+        text: "**Duración:** 3 meses (Diciembre 2024 - Febrero 2025).\n**Objetivo:** Diseñar y construir una plataforma de movimiento Stewart de pequeña escala.\n**Herramientas:** SolidWorks, Eagle, Arduino IDE, Unity, C#, impresora 3D, cortadora láser, fresadora CNC.\nPara este proyecto diseñé y fabriqué una plataforma que se mueve en los seis grados de libertad. El movimiento es dado por la rotación de seis servo motores controlados por un microcontrolador Adafruit ESP32. Es una versión escalada de una plataforma de movimiento usada para simular movimiento y crear experiencias inmersivas en diversas aplicaciones."
     },
     {
         title: "Proceso",
@@ -55,11 +51,7 @@ const textContentEs = [
     },
     {
         title: "Proceso",
-        text: "-**Programar microcontrolador ESP32 para configurar comunicación serial con una aplicación Unity para pruebas y calibración correcta de la plataforma.** Tras medir el rango de movimiento de todos los motores servo, guardé los resultados en una matriz para crear un programa que maneje el movimiento de la plataforma en los seis grados de libertad continuamente, tal como se ve en la animación a la izquierda. \n-**Desarrollar simulación del juego para la plataforma** en Unity con un robot volando a través del tráfico usando scripts en C# que manejan comunicación serial y física dentro del juego.\n -Conectar dos **sensores táctiles** que sirven como controles para que el usuario mueva la plataforma y robot virtual sincrónicamente. \n -Recopilar datos del sensor y transmitirlos a la aplicación Unity para crear movimiento basado en si el usuario está tocando el sensor o no, y durante cuánto tiempo."
-    },
-    {
-        title: "Resultados",
-        text: "-La plataforma se mueve suavemente en los seis grados de libertad.\n-Prototipo completamente funcional.\n-El producto terminado genera una experiencia inmersiva y gamificada para el usuario."
+        text: "-**Programar microcontrolador ESP32 para configurar comunicación serial con una aplicación de Unity para  realizar pruebas y lograr una calibración correcta de la plataforma.** Tras medir el rango de movimiento de todos los motores servo, guardé los resultados en una matriz para crear un programa que maneje el movimiento de la plataforma en los seis grados de libertad continuamente, tal como se ve en la animación a la izquierda. \n-**Desarrollar simulación del juego para la plataforma** en Unity de un robot volando a través de tráfico usando scripts en C# que manejan comunicación serial y física dentro del juego.\n -Conectar dos **sensores táctiles** que sirven como controles para que el usuario mueva la plataforma y robot virtual sincrónicamente. \n -Recopilar datos del sensor y transmitirlos a la aplicación de Unity para crear movimiento basado en si el usuario está tocando el sensor o no, y durante cuánto tiempo."
     }
 ];
 
