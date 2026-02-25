@@ -10,14 +10,6 @@ import MRT from '../Images/MRT_windowFrame.jpg'
 
 const allProjectsEn = [
     {
-        id: 1,
-        title: "Six Degrees of Freedom Platform (December 2024 - February 2025)",
-        description: "All around project focused on modeling and building a six dof platform to simulate movement.",
-        technologies: ["CAD design", "2D drawing", "PCB design", "3D printing", "PCB printing"],
-        imageUrl: platImage,
-        liveUrl: "/MainProject1"
-    },
-    {
         id: 2,
         title: "Smart Pill Dispenser (June 2025 - July 2025)",
         description: "Assistive technology project of a gadget made to serve as a pill dispenser.",
@@ -26,12 +18,20 @@ const allProjectsEn = [
         liveUrl: "/MainProject2"
     },
     {
-        id: 3,
-        title: "PCB for Simon Sense (November 2024)",
-        description: "Project focused on Printed Circuit Board design and fabrication.",
-        //technologies: ["PCB design", "PCB printing"],
-        imageUrl: simonSenseImage,
-        liveUrl: "/MainProject3"
+        id: 6,
+        title: "Full Sail University Tech Building Mixed Reality Tour (May 2025 - June 2025)",
+        description: "Project focused on developing an innovative tour of Full Sail's facilities using AR and VR technology.",
+        //technologies: ["Mixed Reality Tech", "Meta Quest 3", "Unreal Engine"],
+        imageUrl: MRT,
+        liveUrl: "/MainProject4"
+    },
+    {
+        id: 1,
+        title: "Six Degrees of Freedom Platform (December 2024 - February 2025)",
+        description: "All around project focused on modeling and building a six dof platform to simulate movement.",
+        technologies: ["CAD design", "2D drawing", "PCB design", "3D printing", "PCB printing"],
+        imageUrl: platImage,
+        liveUrl: "/MainProject1"
     },
     {
         id: 4,
@@ -42,32 +42,24 @@ const allProjectsEn = [
         liveUrl: "https://youtu.be/T8jMr-RRCVE"
     },
     {
+        id: 3,
+        title: "PCB for Simon Sense (November 2024)",
+        description: "Project focused on Printed Circuit Board design and fabrication.",
+        //technologies: ["PCB design", "PCB printing"],
+        imageUrl: simonSenseImage,
+        liveUrl: "/MainProject3"
+    },
+    {
         id: 5,
         title: "Small Vehicle Controlled with Game Engine (2023)",
         description: "-Designed vehicle parts in OnShape.\n-Laser cut pieces.\n-Assembled prototype.\n-Designed and integrated circuit of motors, motor driver and microcontroller.",
         //technologies: ["CAD design", "Circuit Integration",],
         imageUrl: FSProject,
         liveUrl: "https://youtu.be/wqM2bh4iJ4g?si=9wOKq7hgrXDQmG1s"
-    },
-    {
-        id: 6,
-        title: "Full Sail University Tech Building Mixed Reality Tour (May - June 2025)",
-        description: "Project focused on developing an innovative tour of Full Sail's facilities using AR and VR technology.",
-        //technologies: ["Mixed Reality Tech", "Meta Quest 3", "Unreal Engine"],
-        imageUrl: MRT,
-        liveUrl: "/MainProject4"
     }
 ];
 
 const allProjectsEs = [
-    {
-        id: 1,
-        title: "Plataforma de seis grados de libertad (Diciembre 2024 - Febrero 2025)",
-        description: "Proyecto enfocado en modelar y construir una plataforma de seis grados de libertad para simular movimiento.",
-        //technologies: ["Diseño CAD", "Dibujo 2D", "Diseño PCB", "Impresión 3D", "Impresión PCB"],
-        imageUrl: platImage,
-        liveUrl: "/MainProject1"
-    },
     {
         id: 2,
         title: "Dispensador de pastillas inteligente (Junio 2025 - Julio 2025)",
@@ -83,15 +75,15 @@ const allProjectsEs = [
         //technologies: ["Tecnología de Realidad Mixta", "Meta Quest 3", "Unreal Engine"],
         imageUrl: MRT,
         liveUrl: "/MainProject4"
-    },    
+    }, 
     {
-        id: 4,
-        title: "PCB para Simon Sense (Noviembre 2024)",
-        description: "Proyecto enfocado en el diseño y fabricación de una placa de circuito impreso.",
-        //technologies: ["Diseño PCB", "Impresión PCB"],
-        imageUrl: simonSenseImage,
-        liveUrl: "/MainProject3"
-    },
+        id: 1,
+        title: "Plataforma de seis grados de libertad (Diciembre 2024 - Febrero 2025)",
+        description: "Proyecto enfocado en modelar y construir una plataforma de seis grados de libertad para simular movimiento.",
+        //technologies: ["Diseño CAD", "Dibujo 2D", "Diseño PCB", "Impresión 3D", "Impresión PCB"],
+        imageUrl: platImage,
+        liveUrl: "/MainProject1"
+    },   
     {
         id: 5,
         title: "Ingeniería inversa de Geneva Drive (Diciembre 2024)",
@@ -99,6 +91,14 @@ const allProjectsEs = [
         //technologies: ["Diseño CAD"],
         imageUrl: GDShowcase,
         liveUrl: "https://youtu.be/T8jMr-RRCVE"
+    },
+    {
+        id: 4,
+        title: "PCB para Simon Sense (Noviembre 2024)",
+        description: "Proyecto enfocado en el diseño y fabricación de una placa de circuito impreso.",
+        //technologies: ["Diseño PCB", "Impresión PCB"],
+        imageUrl: simonSenseImage,
+        liveUrl: "/MainProject3"
     },
     {
         id: 6,
