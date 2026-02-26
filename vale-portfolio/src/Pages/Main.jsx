@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../Styles/Portfolio.css';
-import fotoPerfil from '../Images/FotoVale.JPG';
+import fotoPerfil from '../Images/Headshot.jpg';
 //import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import smartPDImage from '../Images/SmartPillDispenser_Isometric.png';
 import platImage from '../Images/6DOF_Platform_CAD_Isometric.png';
