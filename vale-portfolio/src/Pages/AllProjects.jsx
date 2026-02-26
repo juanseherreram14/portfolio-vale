@@ -7,11 +7,20 @@ import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import GDShowcase from '../Images/GenevaDriveShowcase.png'
 import FSProject from '../Images/fsProject.png'
 import GameMath from '../Images/ProjectorEffect3.png'
+import VMP from  '../Images/VMP_Intallation.jpeg';
 import MRT from '../Images/MRT_windowFrame.jpg'
 
 const allProjectsEn = [
     {
         id: 1,
+        title: "Voice Controlled Motion Platform Installation (February 2026 - In development)",
+        description: "Worked on the development of an installation at Full Sail University that consists of a stewart platform controlled by voice commands.",
+        //technologies: ["CAD design", "Circuit Integration",],
+        imageUrl: VMP,
+        liveUrl: "/MainProject6"
+    },
+    {
+        id: 2,
         title: "Game Math (January 2026 - In development)",
         description: "Worked on the development of a projection effect and dynamic materials for an Augmented Reality application in Unreal Engine.",
         //technologies: ["CAD design", "Circuit Integration",],
@@ -19,7 +28,7 @@ const allProjectsEn = [
         liveUrl: "/MainProject5"
     },
     {
-        id: 2,
+        id: 3,
         title: "Smart Pill Dispenser (June 2025 - July 2025)",
         description: "Assistive technology project of a gadget made to serve as a pill dispenser.",
         //technologies: ["Product Design", "CAD design", "2D drawing", "PCB design", "3D printing", "PCB printing"],
@@ -27,7 +36,7 @@ const allProjectsEn = [
         liveUrl: "/MainProject2"
     },
     {
-        id: 3,
+        id: 4,
         title: "Full Sail University Tech Building Mixed Reality Tour (May 2025 - June 2025)",
         description: "Project focused on developing an innovative tour of Full Sail's facilities using AR and VR technology.",
         //technologies: ["Mixed Reality Tech", "Meta Quest 3", "Unreal Engine"],
@@ -35,7 +44,7 @@ const allProjectsEn = [
         liveUrl: "/MainProject4"
     },
     {
-        id: 4,
+        id: 5,
         title: "Six Degrees of Freedom Platform (December 2024 - February 2025)",
         description: "All around project focused on modeling and building a six dof platform to simulate movement.",
         technologies: ["CAD design", "2D drawing", "PCB design", "3D printing", "PCB printing"],
@@ -43,7 +52,7 @@ const allProjectsEn = [
         liveUrl: "/MainProject1"
     },
     {
-        id: 5,
+        id: 6,
         title: "Geneva Drive Reverse Engineering (December 2024)",
         description: "Modeled 3D printed version of the geneva drive mechanism.\n-Measured with calipers.\n-Designed and assembled parts in SolidWorks.\n-Did motion study.",
         //technologies: ["CAD design"],
@@ -51,7 +60,7 @@ const allProjectsEn = [
         liveUrl: "https://youtu.be/T8jMr-RRCVE"
     },
     {
-        id: 6,
+        id: 7,
         title: "PCB for Simon Sense (November 2024)",
         description: "Project focused on Printed Circuit Board design and fabrication.",
         //technologies: ["PCB design", "PCB printing"],
@@ -59,7 +68,7 @@ const allProjectsEn = [
         liveUrl: "/MainProject3"
     },
     {
-        id: 7,
+        id: 8,
         title: "Small Vehicle Controlled with Game Engine (2023)",
         description: "-Designed vehicle parts in OnShape.\n-Laser cut pieces.\n-Assembled prototype.\n-Designed and integrated circuit of motors, motor driver and microcontroller.",
         //technologies: ["CAD design", "Circuit Integration",],
@@ -71,6 +80,14 @@ const allProjectsEn = [
 const allProjectsEs = [
     {
         id: 1,
+        title: "Instalación de Plataforma de Movimiento Controlada por Voz (Febrero 2026 - En desarrollo)",
+        description: "Trabajé en el desarrollo de una instalación en Full Sail University que consiste en una plataforma Stewart controlada por comandos de voz.",
+        //technologies: ["CAD design", "Circuit Integration",],
+        imageUrl: VMP,
+        liveUrl: "/MainProject6"
+    },
+    {
+        id: 2,
         title: "Game Math (Enero 2026 - En desarrollo)",
         description: "Trabajé en el desarrollo de un efecto de proyección y materiales dinámicos para una aplicación de Realidad Aumentada en Unreal Engine.",
         //technologies: ["CAD design", "Circuit Integration",],
@@ -78,7 +95,7 @@ const allProjectsEs = [
         liveUrl: "/MainProject5"
     },
     {
-        id: 2,
+        id: 3,
         title: "Dispensador de pastillas inteligente (Junio 2025 - Julio 2025)",
         description: "Proyecto de tecnología asistiva enfocado al desarrollo de un dispositivo diseñado para dispensar pastillas.",
         //technologies: ["Diseño de producto", "Diseño CAD", "Dibujo 2D", "Diseño PCB", "Impresión 3D", "Impresión PCB"],
@@ -86,7 +103,7 @@ const allProjectsEs = [
         liveUrl: "/MainProject2"
     },
     {
-        id: 3,
+        id: 4,
         title: "Recorrido de realidad mixta en Full Sail University (Mayo - Junio 2025)",
         description: "Proyecto enfocado en desarrollar un recorrido innovador de las instalaciones de Full Sail usando tecnología AR y VR.",
         //technologies: ["Tecnología de Realidad Mixta", "Meta Quest 3", "Unreal Engine"],
@@ -94,7 +111,7 @@ const allProjectsEs = [
         liveUrl: "/MainProject4"
     }, 
     {
-        id: 4,
+        id: 5,
         title: "Plataforma de seis grados de libertad (Diciembre 2024 - Febrero 2025)",
         description: "Proyecto enfocado en modelar y construir una plataforma de seis grados de libertad para simular movimiento.",
         //technologies: ["Diseño CAD", "Dibujo 2D", "Diseño PCB", "Impresión 3D", "Impresión PCB"],
@@ -102,7 +119,7 @@ const allProjectsEs = [
         liveUrl: "/MainProject1"
     },   
     {
-        id: 5,
+        id: 6,
         title: "Ingeniería inversa de Geneva Drive (Diciembre 2024)",
         description: "Modelo 3D impreso del mecanismo Geneva Drive.\n-Medición con calibradores.\n-Diseño y ensamblaje en SolidWorks.\n-Estudio de movimiento.",
         //technologies: ["Diseño CAD"],
@@ -110,7 +127,7 @@ const allProjectsEs = [
         liveUrl: "https://youtu.be/T8jMr-RRCVE"
     },
     {
-        id: 6,
+        id: 7,
         title: "PCB para Simon Sense (Noviembre 2024)",
         description: "Proyecto enfocado en el diseño y fabricación de una placa de circuito impreso.",
         //technologies: ["Diseño PCB", "Impresión PCB"],
@@ -118,7 +135,7 @@ const allProjectsEs = [
         liveUrl: "/MainProject3"
     },
     {
-        id: 7,
+        id: 8,
         title: "Vehículo pequeño controlado con motor de juego (2023)",
         description: "-Diseño de piezas en OnShape.\n-Corte láser de piezas.\n-Ensamblaje de prototipo.\n-Diseño e integración de circuito de motores, driver y microcontrolador.",
         //technologies: ["Diseño CAD", "Integración de circuitos"],
