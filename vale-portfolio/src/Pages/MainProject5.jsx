@@ -70,7 +70,7 @@ const textContentEn = [
 const textContentEs = [
     {
         title: "Descripción general",
-        text: "**Duración:** 2 meses (Enero 2026 - En desarrollo).\n**Objetivo:** mejorar la experiencia del usuario implementando materiales dinámicos y efectos a la calculadora 3D modelada para la aplicación.\n **Herramientas:** Unreal Engine, Meta Quest 3."
+        text: "**Duración:** (Enero 2026 - En desarrollo).\n**Objetivo:** mejorar la experiencia del usuario implementando materiales dinámicos y efectos a la calculadora 3D modelada para la aplicación.\n **Herramientas:** Unreal Engine, Meta Quest 3."
     },
     {
         title: "Proceso",

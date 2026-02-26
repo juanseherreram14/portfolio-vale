@@ -9,7 +9,7 @@ import MainProject2 from './Pages/MainProject2';
 import MainProject3 from './Pages/MainProject3';
 import MainProject4 from './Pages/MainProject4';
 import MainProject5 from './Pages/MainProject5';
-import MainProject6 from './Pages/MainProject6';
+//import MainProject6 from './Pages/MainProject6';
 import { LanguageProvider } from './LanguageContext';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
             <Route path="/MainProject3" element={<MainProject3 />} />      
             <Route path="/MainProject4" element={<MainProject4 />} />     
             <Route path="/MainProject5" element={<MainProject5 />} />       
-            <Route path="/MainProject6" element={<MainProject6 />} />       
+            {/* <Route path="/MainProject6" element={<MainProject6 />} />        */}
           </Routes>
         </div>
       </Router>

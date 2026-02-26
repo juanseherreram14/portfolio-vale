@@ -58,7 +58,7 @@ const renderFormattedText = (text) => {
 const textContentEn = [
     {
         title: "Overview",
-        text: "**Time:** (January 2026 - In development).\n**Objective:** enhance user experience by implementing dynamic materials and effects to the 3D modeled calculator.\n **Tools:** Unreal Engine, Meta Quest 3."
+        text: "**Time:** (February 2026 - In development).\n**Objective:** create an interactive installation of a stewart platform controlled by voice commands.\n **Tools:** Unity Engine, Arduino IDE, C#, C++."
     },
     {
         title: "Process",
@@ -69,7 +69,7 @@ const textContentEn = [
 const textContentEs = [
     {
         title: "Descripción general",
-        text: "**Duración:** 2 meses (Enero 2026 - En desarrollo).\n**Objetivo:** mejorar la experiencia del usuario implementando materiales dinámicos y efectos a la calculadora 3D modelada para la aplicación.\n **Herramientas:** Unreal Engine, Meta Quest 3."
+        text: "**Duración:** (Febrero 2026 - En desarrollo).\n**Objetivo:** crear una instalación interactiva de una plataforma Stewart controlada por comandos de voz.\n **Herramientas:** Unity Engine, Arduino IDE, C#, C++."
     },
     {
         title: "Proceso",

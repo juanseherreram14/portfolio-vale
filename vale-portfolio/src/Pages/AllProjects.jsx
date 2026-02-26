@@ -11,14 +11,14 @@ import VMP from  '../Images/VMP_Intallation.jpeg';
 import MRT from '../Images/MRT_windowFrame.jpg'
 
 const allProjectsEn = [
-    {
-        id: 1,
-        title: "Voice Controlled Motion Platform Installation (February 2026 - In development)",
-        description: "Worked on the development of an installation at Full Sail University that consists of a stewart platform controlled by voice commands.",
-        //technologies: ["CAD design", "Circuit Integration",],
-        imageUrl: VMP,
-        liveUrl: "/MainProject6"
-    },
+    // {
+    //     id: 1,
+    //     title: "Voice Controlled Motion Platform Installation (February 2026 - In development)",
+    //     description: "Worked on the development of an installation at Full Sail University that consists of a stewart platform controlled by voice commands.",
+    //     //technologies: ["CAD design", "Circuit Integration",],
+    //     imageUrl: VMP,
+    //     liveUrl: "/MainProject6"
+    // },
     {
         id: 2,
         title: "Game Math (January 2026 - In development)",
@@ -78,14 +78,14 @@ const allProjectsEn = [
 ];
 
 const allProjectsEs = [
-    {
-        id: 1,
-        title: "Instalación de Plataforma de Movimiento Controlada por Voz (Febrero 2026 - En desarrollo)",
-        description: "Trabajé en el desarrollo de una instalación en Full Sail University que consiste en una plataforma Stewart controlada por comandos de voz.",
-        //technologies: ["CAD design", "Circuit Integration",],
-        imageUrl: VMP,
-        liveUrl: "/MainProject6"
-    },
+    // {
+    //     id: 1,
+    //     title: "Instalación de Plataforma de Movimiento Controlada por Voz (Febrero 2026 - En desarrollo)",
+    //     description: "Trabajé en el desarrollo de una instalación en Full Sail University que consiste en una plataforma Stewart controlada por comandos de voz.",
+    //     //technologies: ["CAD design", "Circuit Integration",],
+    //     imageUrl: VMP,
+    //     liveUrl: "/MainProject6"
+    // },
     {
         id: 2,
         title: "Game Math (Enero 2026 - En desarrollo)",
