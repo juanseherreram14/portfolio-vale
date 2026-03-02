@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/MainProject.css';
-//import mainVideo from '../Videos/VMP_VideoLeft.MOV';
+import mainVideo from '../Videos/VMP_VideoLeftShort.MP4';
 import VMP_UI from '../Images/VMP_UI.png';
 import VMP_UI2 from '../Images/VMP_UI2.png';
 import VMP_UI3 from '../Images/VMP_UI3.png';
@@ -58,7 +58,7 @@ const textContentEn = [
     },
     {
         title: "Process",
-        text: "-**Energy effect:** I began by creating a dynamic material for the portions of the calculator that project light. Then I made a function to handle the change of opacity with interpolation using a timeline in Unreal's blueprint. This way it creates the effect by changing the opacity parameter of the material over time.\n-**UV mapping:** Since the keys of the calculator had its own meshes, I decided to assign a number and letter to map an image based on the number of keys. Then I created a material specifically to only display a portion of the image based on the UV coordinates. Finally, I applied them to the calculator keys using material instances.\n -**Projection effect:** I made a material with a panner and noise node to create movement in the texture and then I applied it to a cone mesh. Since that didn't look quite right, I kept researching different ways to create this effect in Unreal. So finally, I ended up using Unreal's Simple Light Beam material and modifying it's parameters to achieve the desired look. Finally to reduce the static look of the effect, I created a function in blueprint to change the intensity of the light based on the movement of the calculator."
+        text: "-**Voice recognition:** I started by implementing a basic script using KeyWordRecognizer in Unity to get voice input and trigger events based on specific commands. To test the functionality, I used a simple cube that would move in different directions based on the recognized commands.\n-**Command handling:** I then implemented a more complex command handling system that could add commands to a data structure and at the same tiem queue coroutines to execute the commands in order without overlap. This way, I could ensure that the platform would complete one movement before starting another, creating a smoother user experience. I decided to add a word to start \"listening\" for commands and one to execute the actual movement. For example, the user would have to say \"platform + the command name + go\" to trigger a command.\n-**Platform control:** Finally, I integrated the command handling system with the script controlling the platform's movement. Since each platform has different movement limits, I added a json configuration file to define the range of movement for each command. This way, I could easily adjust the movement parameters for each command without having to change the code."
     }
 ];
 
@@ -69,14 +69,14 @@ const textContentEs = [
     },
     {
         title: "Proceso",
-        text: "-**Efecto de energía:** Comencé creando un material dinámico para las partes de la calculadora que proyectan luz. Luego hice una función para manejar el cambio de opacidad con interpolación usando una línea de tiempo en el blueprint de Unreal. De esta manera, se crea el efecto al cambiar el parámetro de opacidad del material a lo largo del tiempo.\n-**Mapeo UV:** Dado que las teclas de la calculadora tenían sus propias mallas, decidí asignar un número y letra para mapear una imagen basado en el número de teclas. Luego creé un material específicamente para mostrar solo una porción de la imagen basada en las coordenadas UV. Finalmente, los apliqué a las teclas de la calculadora usando instancias de materiales.\n -**Efecto de proyección:** Hice un material con un nodo panner y ruido para crear movimiento en la textura y luego lo apliqué a una malla cónica. Dado que eso no se veía del todo bien, seguí investigando diferentes formas de crear este efecto en Unreal. Así que finalmente, terminé usando el material Simple Light Beam de Unreal y modificando sus parámetros para lograr el aspecto deseado. Finalmente, para reducir el aspecto estático del efecto, creé una función en blueprint para cambiar la intensidad de la luz basada en el movimiento de la calculadora."   
+        text: "-**Reconocimiento de voz:** Comencé implementando un script básico usando KeyWordRecognizer en Unity para obtener la entrada de voz y activar eventos basados en comandos específicos. Para probar la funcionalidad, usé un cubo simple que se movería en diferentes direcciones según los comandos reconocidos.\n-**Manejo de comandos:** Luego implementé un sistema de manejo de comandos más complejo que podía agregar comandos a una estructura de datos y al mismo tiempo encolar corrutinas para ejecutar los comandos en orden sin superposición. De esta manera, pude asegurarme de que la plataforma completara un movimiento antes de comenzar otro, creando una experiencia de usuario más fluida. Decidí agregar una palabra para comenzar a \"escuchar\" los comandos y otra para ejecutar el movimiento real. Por ejemplo, el usuario tendría que decir \"plataforma + el nombre del comando + ir\" para activar un comando.\n-**Control de plataforma:** Finalmente, integré el sistema de manejo de comandos con el script que controla el movimiento de la plataforma. Dado que cada plataforma tiene diferentes límites de movimiento, agregué un archivo de configuración json para definir el rango de movimiento para cada comando. De esta manera, pude ajustar fácilmente los parámetros de movimiento para cada comando sin tener que cambiar el código."
     }
 ];
 
 const translations = {
     nav: {
-        title: { en: 'Voice Controlled Motion Platform Installation', es: 'Instalación de Plataforma de Movimiento Controlada por Voz' },
-        //demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER LA DEMONSTRACIÓN' },
+        title: { en: 'Voice Controlled Motion Platform Installation', es: 'Instalación de Plataforma Controlada por Voz' },
+        demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER DEMONSTRACIÓN' },
         home: { en: 'Go back home', es: 'Volver al inicio' }
     },
     controls: {
@@ -109,6 +109,9 @@ function MainProject6() {
                     <h1 className="MP1navbar-title">{translations.nav.title[lang]}</h1>
                 </div>
                 <ul className="MP1navbar-right">
+                    <li><a href="https://youtu.be/s4VAiSve15w?si=6jVjkHaxRouxjI-f"
+                        target="_blank"
+                        rel="noopener noreferrer">{translations.nav.demo[lang]}</a></li>
                     <li><a href="/#home">{translations.nav.home[lang]}</a></li>
                     <li>
                         <a
@@ -135,7 +138,7 @@ function MainProject6() {
                         playsInline
                         className="background-video"
                     >
-                        {/* <source src={mainVideo} type="video/mp4" /> */}
+                        <source src={mainVideo} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>                            
                 </div>
