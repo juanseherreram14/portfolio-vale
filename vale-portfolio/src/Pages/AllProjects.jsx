@@ -7,7 +7,7 @@ import simonSenseImage from '../Images/SimonSenseImage.jpg';
 import GDShowcase from '../Images/GenevaDriveShowcase.png'
 import FSProject from '../Images/fsProject.png'
 import GameMath from '../Images/ProjectorEffect3.png'
-import VMP from  '../Images/VMP_Intallation.jpeg';
+//import VMP from  '../Images/VMP_Intallation.jpeg';
 import MRT from '../Images/MRT_windowFrame.jpg'
 
 const allProjectsEn = [

@@ -1,41 +1,37 @@
 import React, { useState } from 'react';
 import '../Styles/MainProject.css';
-import UVMap1 from '../Images/UVMap1.png';
-import UVMap2 from '../Images/UVMap2.png';
-import UVMap3 from '../Images/UVMap3.png';
-import projEffect1 from '../Images/ProjectorEffect1.png';
-import projEffect2 from '../Images/ProjectorEffect2.png';
-import projEffect3 from '../Images/ProjectorEffect3.png';
-import projEffect4 from '../Images/ProjectorEffect4.png';
+//import mainVideo from '../Videos/VMP_VideoLeft.MOV';
+import VMP_UI from '../Images/VMP_UI.png';
+import VMP_UI2 from '../Images/VMP_UI2.png';
+import VMP_UI3 from '../Images/VMP_UI3.png';
+import VMP_cube from '../Images/VMP_Cube.png';
+import VMP_InstFull from '../Images/VMP_Intallation.jpeg';
+import VMP_InstClose from '../Images/VMP_InstClose.jpeg';
 
 const showcase = [
     {
         id: 1,
-        imageUrl: UVMap1
+        imageUrl: VMP_cube
     },
     {
         id: 2,
-        imageUrl: UVMap2
+        imageUrl: VMP_UI
     },
     {
         id: 3,
-        imageUrl: UVMap3
+        imageUrl: VMP_UI2
     },
     {
         id: 4,
-        imageUrl: projEffect1
+        imageUrl: VMP_UI3
     },
     {
         id: 5,
-        imageUrl: projEffect2
+        imageUrl: VMP_InstFull
     },
     {
         id: 6,
-        imageUrl: projEffect3
-    },
-    {
-        id: 7,
-        imageUrl: projEffect4
+        imageUrl: VMP_InstClose
     }
 ];
 
@@ -58,7 +54,7 @@ const renderFormattedText = (text) => {
 const textContentEn = [
     {
         title: "Overview",
-        text: "**Time:** (February 2026 - In development).\n**Objective:** create an interactive installation of a stewart platform controlled by voice commands.\n **Tools:** Unity Engine, Arduino IDE, C#, C++."
+        text: "**Time:** (February 2026 - In development).\n**Objective:** create an interactive installation of a Stewart motion platform controlled by voice commands.\n **Tools:** Unity Engine, Arduino IDE, C#, C++."
     },
     {
         title: "Process",
@@ -69,7 +65,7 @@ const textContentEn = [
 const textContentEs = [
     {
         title: "Descripción general",
-        text: "**Duración:** (Febrero 2026 - En desarrollo).\n**Objetivo:** crear una instalación interactiva de una plataforma Stewart controlada por comandos de voz.\n **Herramientas:** Unity Engine, Arduino IDE, C#, C++."
+        text: "**Duración:** (Febrero 2026 - En desarrollo).\n**Objetivo:** crear una instalación interactiva de una plataforma Stewart de movimiento controlada por comandos de voz.\n **Herramientas:** Unity Engine, Arduino IDE, C#, C++."
     },
     {
         title: "Proceso",
@@ -79,7 +75,7 @@ const textContentEs = [
 
 const translations = {
     nav: {
-        title: { en: 'Game Math', es: 'Game Math' },
+        title: { en: 'Voice Controlled Motion Platform Installation', es: 'Instalación de Plataforma de Movimiento Controlada por Voz' },
         //demo: { en: 'CLICK HERE TO WATCH DEMO', es: 'HAGA CLIC AQUÍ PARA VER LA DEMONSTRACIÓN' },
         home: { en: 'Go back home', es: 'Volver al inicio' }
     },
@@ -132,11 +128,16 @@ function MainProject6() {
             </nav>
             <section classname="showcase-section">
                 <div className="video-container">
-                    {/* <article className="background-video">
-                        {/* You can swap the image below for a video if needed }
-                        <img src={mainImage} alt="Main Project Visual" style={{ width: '75%', height: '90%', objectFit: 'cover'}} />
-                    </article> */}
-                    {translations.comingSoon[lang]}
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="background-video"
+                    >
+                        {/* <source src={mainVideo} type="video/mp4" /> */}
+                        Your browser does not support the video tag.
+                    </video>                            
                 </div>
                 <div className="showcase-wrapper">
                     <div className="changing-text-container">

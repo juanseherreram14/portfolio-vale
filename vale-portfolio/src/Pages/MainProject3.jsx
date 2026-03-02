@@ -49,10 +49,6 @@ const textContentEn = [
     {
         title: "Process",
         text: "-Make PCB schematic and design board in Eagle.\n-Print board.\n-Mount and solder electronic components.\nTest for shorts with multimeter."
-    },
-    {
-        title: "Results",
-        text: "All connections of the PCB work correctly and it could be used to make a functional Simon Sense."
     }
 ];
 
@@ -64,10 +60,6 @@ const textContentEs = [
     {
         title: "Proceso",
         text: "-Hacer el esquema de la PCB y diseñar la placa en Eagle.\n-Imprimir la placa.\n-Montar y soldar los componentes electrónicos.\nProbar cortos con multímetro."
-    },
-    {
-        title: "Resultados",
-        text: "Todas las conexiones de la PCB funcionan correctamente y se podría usar para hacer un Simon Sense funcional."
     }
 ];
 
