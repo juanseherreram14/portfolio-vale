@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/MainProject.css';
-//import mainImage from '../Images/GameMathMain.png';
+import mainVideo from '../Videos/GM_LeftVideo.mp4';
 import UVMap1 from '../Images/UVMap1.png';
 import UVMap2 from '../Images/UVMap2.png';
 import UVMap3 from '../Images/UVMap3.png';
@@ -141,11 +141,16 @@ function MainProject5() {
             </nav>
             <section classname="showcase-section">
                 <div className="video-container">
-                    {/* <article className="background-video">
-                        {/* You can swap the image below for a video if needed }
-                        <img src={mainImage} alt="Main Project Visual" style={{ width: '75%', height: '90%', objectFit: 'cover'}} />
-                    </article> */}
-                    {translations.comingSoon[lang]}
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="background-video"
+                    >
+                        <source src={mainVideo} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div className="showcase-wrapper">
                     <div className="changing-text-container">
